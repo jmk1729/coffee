@@ -55,3 +55,6 @@
 [submodule "src/coronagraphs"]
 	path = src/coronagraphs
 	url = https://github.com/FALCON-orga/coronagraphs
+[submodule "src/cudacomp"]
+	path = src/cudacomp
+	url = https://github.com/niptk-org/cudacomp
