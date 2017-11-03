@@ -49,3 +49,9 @@
 [submodule "src/psf"]
 	path = src/psf
 	url = https://github.com/niptk-org/psf
+[submodule "src/PIAACMCsimul"]
+	path = src/PIAACMCsimul
+	url = https://github.com/FALCON-orga/PIAACMCsimul
+[submodule "src/coronagraphs"]
+	path = src/coronagraphs
+	url = https://github.com/FALCON-orga/coronagraphs
