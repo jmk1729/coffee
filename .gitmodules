@@ -64,3 +64,9 @@
 [submodule "src/AOsystSim"]
 	path = src/AOsystSim
 	url = https://github.com/FALCON-orga/AOsystSim
+[submodule "src/kdtree"]
+	path = src/kdtree
+	url = https://github.com/niptk-org/kdtree
+[submodule "src/CommandLineInterface"]
+	path = src/CommandLineInterface
+	url = https://github.com/niptk-org/CommandLineInterface
