@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 #
 
-m4_define([PROGNAME], CACAO)
+m4_define([PROGNAME], FALCON)
 m4_define([PVERSION], 3.4.00)
 
 AC_INIT([PROGNAME], [PVERSION], [oliv.guyon@gmail.com], [PROGNAME])
@@ -392,16 +392,11 @@ src/img_reduce/Makefile \
 src/psf/Makefile \
 src/cudacomp/Makefile \
 src/kdtree/Makefile \
-src/linARfilterPred/Makefile \
-src/AOloopControl/Makefile \
-src/AOloopControl_acquireCalib/Makefile \
-src/AOloopControl_compTools/Makefile \
-src/AOloopControl_computeCalib/Makefile \
-src/AOloopControl_DM/Makefile \
-src/AOloopControl_IOtools/Makefile \
-src/AOloopControl_perfTest/Makefile \
-src/AOloopControl_PredictiveControl/Makefile \
-src/FPAOloopControl/Makefile \
+src/PIAACMCsimul/Makefile \
+src/coronagraphs/Makefile \
+src/AOsystSim/Makefile \
+src/OptSystProp/Makefile)
+
 
 AC_OUTPUT
 
