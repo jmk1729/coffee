@@ -70,3 +70,12 @@
 [submodule "src/CommandLineInterface"]
 	path = src/CommandLineInterface
 	url = https://github.com/niptk-org/CommandLineInterface
+[submodule "src/image_basic"]
+	path = src/image_basic
+	url = https://github.com/niptk-org/image_basic
+[submodule "src/WFpropagate"]
+	path = src/WFpropagate
+	url = https://github.com/AtmoTurbu/WFpropagate
+[submodule "src/OpticsMaterials"]
+	path = src/OpticsMaterials
+	url = https://github.com/AtmoTurbu/OpticsMaterials

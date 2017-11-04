@@ -1,7 +1,3 @@
-SUBDIRS = src
-ACLOCAL_AMFLAGS = -I m4
-
-
 #SUFFIXES = .c .h .y .l
 
 bin_PROGRAMS = FALCON
