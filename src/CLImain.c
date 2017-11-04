@@ -6,7 +6,7 @@
 int main(int argc, char *argv[])
 {
 
-	printf("WELCOME to CACAO\n\n");
+	printf("WELCOME to FALCON\n\n");
 	runCLI(argc, argv);
 
 
