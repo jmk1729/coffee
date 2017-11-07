@@ -26,7 +26,7 @@ FALCON_LDADD =
 ## Linking order matters
 
 ## 
-## AO modules
+## FALCON modules
 ##
 
 SUBDIRS += PIAACMCsimul
@@ -44,6 +44,10 @@ FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/AOsystSim
 SUBDIRS += OptSystProp
 FALCON_LDADD += OptSystProp/liboptsystprop.la
 FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/OptSystProp
+
+SUBDIRS += WFpropagate
+FALCON_LDADD += WFpropagate/libwfpropagate.la
+FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/WFpropagate
 
 
 ## Core modules last, higher level modules at the top
