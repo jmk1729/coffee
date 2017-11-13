@@ -25,8 +25,9 @@ FALCON_LDADD =
 ## Modules are built as libraries of convenience
 ## Linking order matters
 
+
 ## 
-## AO modules
+## FALCON modules
 ##
 
 SUBDIRS += PIAACMCsimul
@@ -53,8 +54,11 @@ SUBDIRS += WFpropagate
 FALCON_LDADD += WFpropagate/libwfpropagate.la
 FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/WFpropagate
 
-## Core modules last, higher level modules at the top
 
+
+## 
+## Core modules last, higher level modules at the top
+## 
 
 SUBDIRS += cudacomp
 FALCON_LDADD += cudacomp/libcudacomp.la
@@ -105,11 +109,10 @@ FALCON_LDADD += fft/libfft.la
 FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/fft
 
 
+
 ## 
 ## CORE modules, should always be included
 ##
-
-
 
 SUBDIRS += COREMOD_arith
 FALCON_LDADD += COREMOD_arith/libcoremodarith.la
