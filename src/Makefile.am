@@ -45,6 +45,13 @@ SUBDIRS += OptSystProp
 FALCON_LDADD += OptSystProp/liboptsystprop.la
 FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/OptSystProp
 
+SUBDIRS += OpticsMaterials
+FALCON_LDADD += OpticsMaterials/libopticsmaterials.la
+FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/OpticsMaterials
+
+SUBDIRS += WFpropagate
+FALCON_LDADD += WFpropagate/libwfpropagate.la
+FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/WFpropagate
 
 ## Core modules last, higher level modules at the top
 

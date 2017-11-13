@@ -3,7 +3,7 @@
 #
 
 m4_define([PROGNAME], FALCON)
-m4_define([PVERSION], 3.4.00)
+m4_define([PVERSION], 1.0.00)
 
 AC_INIT([PROGNAME], [PVERSION], [oliv.guyon@gmail.com], [PROGNAME])
 
@@ -395,7 +395,9 @@ src/kdtree/Makefile \
 src/PIAACMCsimul/Makefile \
 src/coronagraphs/Makefile \
 src/AOsystSim/Makefile \
-src/OptSystProp/Makefile)
+src/OptSystProp/Makefile \
+src/OpticsMaterials/Makefile \
+src/WFpropagate/Makefile )
 
 
 AC_OUTPUT
