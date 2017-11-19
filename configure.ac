@@ -2,8 +2,8 @@
 # Process this file with autoconf to produce a configure script.
 #
 
-m4_define([PROGNAME], FALCON)
-m4_define([PVERSION], 1.0.00)
+m4_define([PROGNAME], coffee)
+m4_define([PVERSION], 0.1.00)
 
 AC_INIT([PROGNAME], [PVERSION], [oliv.guyon@gmail.com], [PROGNAME])
 
