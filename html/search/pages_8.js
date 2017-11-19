@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['news',['News',['../page_news.html',1,'page_UsersGuide']]]
+  ['readline_20input_20keys',['Readline Input Keys',['../page_readlinekeys.html',1,'page_userinput']]]
 ];

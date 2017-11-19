@@ -3,7 +3,7 @@
 
 #  Coronagraph design and simulation
 
-[FALCON on github](https://github.com/FALCON-orga/FALCON)
+[coffee on github](https://github.com/coffee-rga/coffee)
 
 ## User's Guide
 
@@ -31,7 +31,7 @@
 - @ref page_LoadingModules
 
 
-## FALCON modules
+## coffee modules
 
 - @ref page_module_CommandLineInterface
 - @ref page_module_00CORE

@@ -4,9 +4,6 @@ var searchData=
   ['f_5feval',['f_eval',['../AOsystSim_8c.html#a7f6e7f9133dafaa17057d85b30c4c0b4',1,'AOsystSim.c']]],
   ['f_5ffilter',['f_filter',['../image__filter_8c.html#abc20ea5404ca4d631c908de64f8677ca',1,'f_filter(const char *ID_name, const char *ID_out, float f1, float f2):&#160;image_filter.c'],['../image__filter_8h.html#abc20ea5404ca4d631c908de64f8677ca',1,'f_filter(const char *ID_name, const char *ID_out, float f1, float f2):&#160;image_filter.c']]],
   ['fact',['fact',['../ZernikePolyn_8c.html#af7524858a2e89eb535d1afe4a573fc48',1,'fact(int n):&#160;ZernikePolyn.c'],['../ZernikePolyn_8h.html#af7524858a2e89eb535d1afe4a573fc48',1,'fact(int n):&#160;ZernikePolyn.c']]],
-  ['falcon_5fmodules_2emd',['FALCON_Modules.md',['../FALCON__Modules_8md.html',1,'']]],
-  ['falcon_5fprogrammersguide_2emd',['FALCON_ProgrammersGuide.md',['../FALCON__ProgrammersGuide_8md.html',1,'']]],
-  ['falcon_5fusersguide_2emd',['FALCON_UsersGuide.md',['../FALCON__UsersGuide_8md.html',1,'']]],
   ['fast_5fcenter_5fpsf',['fast_center_PSF',['../psf_8c.html#a36346c341caa488e04c4474bf5b395b2',1,'fast_center_PSF(const char *ID_name, double *xcenter, double *ycenter, long box_size):&#160;psf.c'],['../psf_8h.html#a36346c341caa488e04c4474bf5b395b2',1,'fast_center_PSF(const char *ID_name, double *xcenter, double *ycenter, long box_size):&#160;psf.c']]],
   ['fast_5fpoisson',['fast_poisson',['../statistic_8c.html#ab7ac1e1d30224f2ad6b02a2bbc575153',1,'fast_poisson(double mu):&#160;statistic.c'],['../statistic_8h.html#ab7ac1e1d30224f2ad6b02a2bbc575153',1,'fast_poisson(double mu):&#160;statistic.c']]],
   ['fconvolve',['fconvolve',['../image__filter_8c.html#a8932e1b8cb2de28c639605a36d68bc26',1,'fconvolve(const char *name_in, const char *name_ke, const char *name_out):&#160;image_filter.c'],['../image__filter_8h.html#a91105a0fefc644767e0f2dc28b391fac',1,'fconvolve(const char *ID_in, const char *ID_ke, const char *ID_out):&#160;image_filter.c']]],
@@ -100,6 +97,5 @@ var searchData=
   ['full_5fstructure_5ffunction',['full_structure_function',['../info_8c.html#ac02cdc06d81f15987e62b17f1acb31f7',1,'full_structure_function(const char *ID_name, long NBpoints, const char *ID_out):&#160;info.c'],['../info_8h.html#ac02cdc06d81f15987e62b17f1acb31f7',1,'full_structure_function(const char *ID_name, long NBpoints, const char *ID_out):&#160;info.c']]],
   ['fwfs',['Fwfs',['../structEXAOSIMCONF.html#a077a672d832c1468e875e92a69c9c651',1,'EXAOSIMCONF']]],
   ['fwhm_5fmeasured',['FWHM_MEASURED',['../psf_8c.html#a45c45f9affb7a1208d03534b2c5b0afd',1,'psf.c']]],
-  ['falcon_20modules',['FALCON modules',['../page_FALCON_Modules.html',1,'']]],
   ['functions_20with_20high_20priority_20scheduler',['Functions with high priority scheduler',['../group__RTfunctions.html',1,'']]]
 ];

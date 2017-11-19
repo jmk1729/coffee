@@ -288,9 +288,8 @@ var searchData=
   ['cudacomp_5fprintgpumatmultconf',['CUDACOMP_printGPUMATMULTCONF',['../cudacomp_8c.html#a1fd7986590f046a9412ba7f1d0f5d3d9',1,'CUDACOMP_printGPUMATMULTCONF(int index):&#160;cudacomp.c'],['../cudacomp_8h.html#a1fd7986590f046a9412ba7f1d0f5d3d9',1,'CUDACOMP_printGPUMATMULTCONF(int index):&#160;cudacomp.c']]],
   ['cudacomp_5ftest_5fcli',['CUDACOMP_test_cli',['../cudacomp_8c.html#ad81526b0b3c245b0f134a3bae42e0d24',1,'cudacomp.c']]],
   ['cli_20overview',['CLI Overview',['../page_CLI_Overview.html',1,'page_userinput']]],
-  ['coding_20standards',['Coding Standards',['../page_coding_standards.html',1,'page_FALCON_ProgrammersGuide']]],
+  ['coding_20standards',['Coding Standards',['../page_coding_standards.html',1,'']]],
   ['command_20line_20interface_20syntax',['Command Line Interface Syntax',['../page_command_line_interface.html',1,'page_userinput']]],
   ['compilation',['Compilation',['../page_Compilation.html',1,'page_coding_standards']]],
-  ['c_20code_20description',['C code description',['../page_PIAACMCsimul_Ccode.html',1,'page_FALCON_ProgrammersGuide']]],
-  ['command_20line_20interface',['Command Line Interface',['../page_userinput.html',1,'page_UsersGuide']]]
+  ['command_20line_20interface',['Command Line Interface',['../page_userinput.html',1,'']]]
 ];

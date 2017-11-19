@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>FALCON: Compilation</title>
+<title>coffee: Compilation</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,9 +31,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">FALCON
+   <div id="projectname">coffee
    </div>
-   <div id="projectbrief">Coronagraph design and simulation</div>
+   <div id="projectbrief">Coronafraph Optimization</div>
   </td>
  </tr>
  </tbody>
@@ -104,15 +104,22 @@ $(document).ready(function(){initNavTree('page_Compilation.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Source code is written in C. The package follows the GNU build process, and uses autotools (autmake, autoconf, libtool).</p>
+<p>To compile and install: </p><pre class="fragment">autoreconf -i
+./configure
+make
+make install
+</pre><h2>Compilation options</h2>
 <p>By default, libraries are dynamically linked.</p>
 <p>Full list of compilation options is obtained by : </p><pre class="fragment">./configure --help
-</pre><p>For high performance (fast execution speed), use : </p><pre class="fragment">./configure_highperf</pre> </div></div><!-- contents -->
+</pre><p>For high performance (fast execution speed), use : </p><pre class="fragment">./configure CFLAGS='-Ofast -march=native' --enable-cuda --enable-magma
+</pre><h2>MAGMA library</h2>
+<p>The configure script uses pkg-config to configure magma for linking. The MAGMA-provided pkg-config file (.pc file) must be made visible to pkg-config by running (ideally in .bashrc): </p><pre class="fragment">export PKG_CONFIG_PATH=/usr/local/magma/lib/pkgconfig</pre> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="page_FALCON_ProgrammersGuide.html">Programmer&#39;s guide</a></li><li class="navelem"><a class="el" href="page_coding_standards.html">Coding Standards</a></li>
-    <li class="footer">Generated on Sun Nov 19 2017 06:53:16 for FALCON by
+    <li class="navelem"><a class="el" href="page_coding_standards.html">Coding Standards</a></li>
+    <li class="footer">Generated on Sun Nov 19 2017 11:53:57 for coffee by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
