@@ -10,6 +10,7 @@ var NAVTREE =
     [ "Loading Modules", "page_LoadingModules.html", null ],
     [ "Command Line Interface", "page_userinput.html", "page_userinput" ],
     [ "Module CommandLineInterface", "page_module_CommandLineInterface.html", null ],
+    [ "Module COREMOD_arith", "page_module_COREMOD_arith.html", null ],
     [ "Module COREMOD_iofits", "page_module_COREMOD_iofits.html", null ],
     [ "Module COREMOD_memory", "page_module_COREMOD_memory.html", null ],
     [ "Module COREMOD_tools", "page_module_COREMOD_tools.html", null ],
@@ -67,8 +68,8 @@ var NAVTREEINDEX =
 "functions_vars_d.html",
 "image__filter_8h.html#ab22b31f3ca8d174936a7dc6b1ac2e399",
 "kdtree_8c.html#aeeb3d7c8f548d0f9f91679fe819aa0ca",
-"structBITMAPINFOHEADER.html#a43ec6e8e10f0c7fdf9bc9c892a22a028",
-"structOPTPIAACMCDESIGN.html#a9101237f5e1b7af8a40014685cb399b9"
+"structBITMAPINFOHEADER.html#a2b93177924fd3803a050bf3daaf23ee4",
+"structOPTPIAACMCDESIGN.html#a8fbed9f02c0a17dcc2f233be4c4af697"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
