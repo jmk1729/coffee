@@ -1,8 +1,8 @@
 #SUFFIXES = .c .h .y .l
 
-bin_PROGRAMS = FALCON
-FALCON_SOURCES = CLImain.c CommandLineInterface/CLIcore.c CommandLineInterface/CLIcore.h CommandLineInterface/calc_bison.y CommandLineInterface/calc_flex.l CommandLineInterface/calc.h
-FALCON_CPPFLAGS = -I@abs_top_srcdir@/src -DCONFIGDIR=\"@abs_top_srcdir@/config\" -DSOURCEDIR=\"@abs_top_srcdir@/src\" -DABSSRCTOPDIR=\"@abs_top_srcdir@\" -fopenmp -ldl
+bin_PROGRAMS = coffee
+coffee_SOURCES = CLImain.c CommandLineInterface/CLIcore.c CommandLineInterface/CLIcore.h CommandLineInterface/calc_bison.y CommandLineInterface/calc_flex.l CommandLineInterface/calc.h
+coffee_CPPFLAGS = -I@abs_top_srcdir@/src -DCONFIGDIR=\"@abs_top_srcdir@/config\" -DSOURCEDIR=\"@abs_top_srcdir@/src\" -DABSSRCTOPDIR=\"@abs_top_srcdir@\" -fopenmp -ldl
 
 ACLOCAL_AMFLAGS = -I m4
 
@@ -19,7 +19,7 @@ BUILT_SOURCES = CommandLineInterface/calc_bison.h
 
 
 SUBDIRS = 
-FALCON_LDADD = 
+coffee_LDADD = 
 
 
 ## Modules are built as libraries of convenience
@@ -27,32 +27,32 @@ FALCON_LDADD =
 
 
 ## 
-## FALCON modules
+## coffee modules
 ##
 
 SUBDIRS += PIAACMCsimul
-FALCON_LDADD += PIAACMCsimul/libpiaacmcsimul.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/PIAACMCsimul
+coffee_LDADD += PIAACMCsimul/libpiaacmcsimul.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/PIAACMCsimul
 
 SUBDIRS += coronagraphs
-FALCON_LDADD += coronagraphs/libcoronagraphs.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/coronagraphs
+coffee_LDADD += coronagraphs/libcoronagraphs.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/coronagraphs
 
 SUBDIRS += AOsystSim
-FALCON_LDADD += AOsystSim/libaosystsim.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/AOsystSim
+coffee_LDADD += AOsystSim/libaosystsim.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/AOsystSim
 
 SUBDIRS += OptSystProp
-FALCON_LDADD += OptSystProp/liboptsystprop.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/OptSystProp
+coffee_LDADD += OptSystProp/liboptsystprop.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/OptSystProp
 
 SUBDIRS += OpticsMaterials
-FALCON_LDADD += OpticsMaterials/libopticsmaterials.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/OpticsMaterials
+coffee_LDADD += OpticsMaterials/libopticsmaterials.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/OpticsMaterials
 
 SUBDIRS += WFpropagate
-FALCON_LDADD += WFpropagate/libwfpropagate.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/WFpropagate
+coffee_LDADD += WFpropagate/libwfpropagate.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/WFpropagate
 
 
 
@@ -61,52 +61,52 @@ FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/WFpropagate
 ## 
 
 SUBDIRS += cudacomp
-FALCON_LDADD += cudacomp/libcudacomp.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/cudacomp
+coffee_LDADD += cudacomp/libcudacomp.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/cudacomp
 
 SUBDIRS += psf
-FALCON_LDADD += psf/libpsf.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/psf
+coffee_LDADD += psf/libpsf.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/psf
 
 SUBDIRS += img_reduce
-FALCON_LDADD += img_reduce/libimgreduce.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/img_reduce
+coffee_LDADD += img_reduce/libimgreduce.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/img_reduce
 
 SUBDIRS += image_format
-FALCON_LDADD += image_format/libimageformat.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/image_format
+coffee_LDADD += image_format/libimageformat.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/image_format
 
 SUBDIRS += ZernikePolyn
-FALCON_LDADD += ZernikePolyn/libzernikepolyn.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/ZernikePolyn
+coffee_LDADD += ZernikePolyn/libzernikepolyn.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/ZernikePolyn
 
 SUBDIRS += image_basic
-FALCON_LDADD += image_basic/libimagebasic.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/image_basic
+coffee_LDADD += image_basic/libimagebasic.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/image_basic
 
 SUBDIRS += image_filter
-FALCON_LDADD += image_filter/libimagefilter.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/image_filter
+coffee_LDADD += image_filter/libimagefilter.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/image_filter
 
 SUBDIRS += image_gen
-FALCON_LDADD += image_gen/libimagegen.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/image_gen
+coffee_LDADD += image_gen/libimagegen.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/image_gen
 
 SUBDIRS += linopt_imtools
-FALCON_LDADD += linopt_imtools/liblinoptimtools.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/linopt_imtools
+coffee_LDADD += linopt_imtools/liblinoptimtools.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/linopt_imtools
 
 SUBDIRS += statistic
-FALCON_LDADD += statistic/libstatistic.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/statistic
+coffee_LDADD += statistic/libstatistic.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/statistic
 
 SUBDIRS += info
-FALCON_LDADD += info/libinfo.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/info
+coffee_LDADD += info/libinfo.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/info
 
 SUBDIRS += fft
-FALCON_LDADD += fft/libfft.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/fft
+coffee_LDADD += fft/libfft.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/fft
 
 
 
@@ -115,25 +115,25 @@ FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/fft
 ##
 
 SUBDIRS += COREMOD_arith
-FALCON_LDADD += COREMOD_arith/libcoremodarith.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/COREMOD_arith
+coffee_LDADD += COREMOD_arith/libcoremodarith.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/COREMOD_arith
 
 SUBDIRS += COREMOD_memory
-FALCON_LDADD += COREMOD_memory/libcoremodmemory.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/COREMOD_memory
+coffee_LDADD += COREMOD_memory/libcoremodmemory.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/COREMOD_memory
 
 SUBDIRS += COREMOD_iofits
-FALCON_LDADD += COREMOD_iofits/libcoremodiofits.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/COREMOD_iofits
+coffee_LDADD += COREMOD_iofits/libcoremodiofits.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/COREMOD_iofits
 
 SUBDIRS += COREMOD_tools
-FALCON_LDADD += COREMOD_tools/libcoremodtools.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/COREMOD_tools
+coffee_LDADD += COREMOD_tools/libcoremodtools.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/COREMOD_tools
 
 SUBDIRS += 00CORE
-FALCON_LDADD += 00CORE/lib00core.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/00CORE
+coffee_LDADD += 00CORE/lib00core.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/00CORE
 
 SUBDIRS += ImageStreamIO
-FALCON_LDADD += ImageStreamIO/libimagestreamio.la
-FALCON_CPPFLAGS += -I@abs_top_srcdir@/src/ImageStreamIO
+coffee_LDADD += ImageStreamIO/libimagestreamio.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/ImageStreamIO
