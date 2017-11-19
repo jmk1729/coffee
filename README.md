@@ -1,26 +1,26 @@
  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 
-# FALCON : Coronagraph design
+# coffee : Coronagraph design
 
 ## Overview
 
-Set of image processing tools and functions accessible through a command line interface (CLI). Holds images in RAM, with image stream support (shared memory with low-latency IPC support).
+Coronagraph optimization routines accessible through a command line interface (CLI). Holds images in RAM, with image stream support (shared memory with low-latency IPC support).
 
 Written in C, optimized for performance.
 
 Executable launches a command line interface (CLI). Type "help" in the CLI to get started.
 
-FALCON uses the [MILK package](https://github.com/milk-org/MILK)
+coffee uses the [MILK package](https://github.com/milk-org/MILK)
 
 
 ## Downloading and installing 
 
 
-The FALCON package follows the standard git clone steps and GNU build process :
+The coffee package follows the standard git clone steps and GNU build process :
 
-	git clone https://github.com/FALCON-orga/FALCON
-	cd FALCON
+	git clone https://github.com/coffee-rga/coffee
+	cd coffee
 	git submodule init
 	git submodule update
 	autoreconf -i
@@ -37,13 +37,13 @@ Note: On OS X you need to use gcc-mp-5 for openMP:
 
 ## Reporting bugs, issues
 
-Report bugs and issues on [this page]( https://github.com/FALCON-orga/FALCON/issues )
+Report bugs and issues on [this page]( https://github.com/coffee-rga/coffee/issues )
 
 
 ## Contributing to project
 
 
-See [coding standards]( http://FALCON-orga.github.io/FALCON/html/page_coding_standards.html ) 
+See [coding standards]( http://coffee-rga.github.io/coffee/html/page_coding_standards.html ) 
 
 
 
@@ -51,7 +51,7 @@ See [coding standards]( http://FALCON-orga.github.io/FALCON/html/page_coding_sta
 
 ## Documentation
 
-[Online documentation]( http://FALCON-orga.github.io/FALCON/ ) 
+[Online documentation]( http://coffee-rga.github.io/coffee/ ) 
 
 
 ## Libraries
@@ -77,11 +77,11 @@ If you use NVIDIA GPUs, install cuda and magma libraries, and add "--enable-cuda
 
 All functions are accessible from the command line interface (CLI). Enter the CLI and type "help" for instructions.
 
-		./bin/FALCON
+		./bin/coffee
 
 
 ## LICENCE
 
 
-[GNU General Public License v3.0]( https://github.com/FALCON-orga/FALCON/blob/master/LICENCE.txt )
+[GNU General Public License v3.0]( https://github.com/coffee-orga/coffee/blob/master/LICENCE.txt )
 
