@@ -7,5 +7,6 @@ var OpticsMaterials_8c =
     [ "OPTICSMATERIALS_n", "OpticsMaterials_8c.html#a4178a0c12e630345bb8d9fc1250ca92b", null ],
     [ "OPTICSMATERIALS_name", "OpticsMaterials_8c.html#a9741d9806a3392de60e5513089d9e0bb", null ],
     [ "OPTICSMATERIALS_pha_lambda", "OpticsMaterials_8c.html#a5823537697aa1bb6681b2733baf48c24", null ],
+    [ "data", "OpticsMaterials_8c.html#a9842752e03b4de9b4593f1a3b34364ab", null ],
     [ "MatCode", "OpticsMaterials_8c.html#a8e9a5245b5b87e4c8de05527ec2374eb", null ]
 ];

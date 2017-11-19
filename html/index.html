@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1>Coronagraph design and simulation</h1>
+<p><a href="https://github.com/FALCON-orga/FALCON">FALCON on github</a></p>
 <h2>User's Guide</h2>
 <ul>
 <li><a class="el" href="page_PIAACMCsimul_Introduction.html">Introduction</a></li>
@@ -158,14 +159,22 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li><a class="el" href="page_module_OptSystProp.html">Module OptSystProp</a></li>
 <li><a class="el" href="page_module_AOsystSim.html">Module AOsystSim</a></li>
 <li><a class="el" href="page_module_ZernikePolyn.html">Module ZernikePolyn</a></li>
-<li><a class="el" href="page_module_PIAACMCsimul.html">Module PIAACMCsimul</a> </li>
+<li><a class="el" href="page_module_PIAACMCsimul.html">Module PIAACMCsimul</a></li>
 </ul>
-</div></div><!-- contents -->
+<h2>Developper's tips</h2>
+<p>To get latest modules (master branches) : </p><pre class="fragment">git submodule foreach "(git checkout master; git pull)"
+</pre><p>To get latest modules (dev branches) : </p><pre class="fragment">git submodule foreach "(git checkout dev; git pull)"
+</pre><p>When developing, work in dev branch and set branch to dev in all submodules.</p>
+<p>To synchronize master to latest dev: </p><pre class="fragment">git submodule foreach "(git checkout master; git merge dev)"
+git checkout master
+git merge dev
+git submodule foreach "(git checkout master; git push)"
+git push</pre> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Nov 11 2017 18:37:18 for FALCON by
+    <li class="footer">Generated on Sun Nov 19 2017 06:53:16 for FALCON by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

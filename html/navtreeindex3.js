@@ -216,8 +216,9 @@ var NAVTREEINDEX3 =
 "OpticsMaterials_8c.html#a5823537697aa1bb6681b2733baf48c24":[7,0,0,20,0,6],
 "OpticsMaterials_8c.html#a5d6945fa6383f9ab81ba228440be7879":[7,0,0,20,0,3],
 "OpticsMaterials_8c.html#a8736caa225453f68153dde7f8bce0f36":[7,0,0,20,0,2],
-"OpticsMaterials_8c.html#a8e9a5245b5b87e4c8de05527ec2374eb":[7,0,0,20,0,7],
+"OpticsMaterials_8c.html#a8e9a5245b5b87e4c8de05527ec2374eb":[7,0,0,20,0,8],
 "OpticsMaterials_8c.html#a9741d9806a3392de60e5513089d9e0bb":[7,0,0,20,0,5],
+"OpticsMaterials_8c.html#a9842752e03b4de9b4593f1a3b34364ab":[7,0,0,20,0,7],
 "OpticsMaterials_8c.html#afd02bb0f6a745c39d5e3417493995c71":[7,0,0,20,0,1],
 "OpticsMaterials_8h.html":[7,0,0,20,1],
 "OpticsMaterials_8h.html#a4178a0c12e630345bb8d9fc1250ca92b":[7,0,0,20,1,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "PIAACMCsimul_8c.html#a630b070f5e9d187ea334902ef75682d5":[7,0,0,22,0,35],
 "PIAACMCsimul_8c.html#a68c31c0cff7fd667fe975e4d3ffeba0c":[7,0,0,22,0,31],
 "PIAACMCsimul_8c.html#a85f1459cf776292b7e2fff9932a79252":[7,0,0,22,0,29],
-"PIAACMCsimul_8c.html#a8f9c34fd77fb906ae9d4e65d8237b3e6":[7,0,0,22,0,26],
-"PIAACMCsimul_8c.html#a927c68f1cdd99667733400fd49d1b957":[7,0,0,22,0,19]
+"PIAACMCsimul_8c.html#a8f9c34fd77fb906ae9d4e65d8237b3e6":[7,0,0,22,0,26]
 };

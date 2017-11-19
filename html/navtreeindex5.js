@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"coronagraphs_8c.html#a2e85fc32c6d56f6cc4a53eb29446fad4":[7,0,0,7,0,46],
 "coronagraphs_8c.html#a350fed140ba6d06b3923c62a8b959ff4":[7,0,0,7,0,7],
 "coronagraphs_8c.html#a3ceac4c3acb13a22b16260d883d2a660":[7,0,0,7,0,5],
 "coronagraphs_8c.html#a3f99b3f1988f04e814203d69650de7eb":[7,0,0,7,0,56],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "functions_vars.html":[6,2,1,0],
 "functions_vars_a.html":[6,2,1,1],
 "functions_vars_b.html":[6,2,1,2],
-"functions_vars_c.html":[6,2,1,3],
-"functions_vars_d.html":[6,2,1,4]
+"functions_vars_c.html":[6,2,1,3]
 };
