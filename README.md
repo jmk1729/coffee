@@ -37,13 +37,13 @@ Note: On OS X you need to use gcc-mp-5 for openMP:
 
 ## Reporting bugs, issues
 
-Report bugs and issues on [this page]( https://github.com/coffee-rga/coffee/issues )
+Report bugs and issues on [this page]( https://github.com/coffee-org/coffee/issues )
 
 
 ## Contributing to project
 
 
-See [coding standards]( http://coffee-rga.github.io/coffee/html/page_coding_standards.html ) 
+See [coding standards]( http://coffee-org.github.io/coffee/html/page_coding_standards.html ) 
 
 
 
@@ -51,7 +51,7 @@ See [coding standards]( http://coffee-rga.github.io/coffee/html/page_coding_stan
 
 ## Documentation
 
-[Online documentation]( http://coffee-rga.github.io/coffee/ ) 
+[Online documentation]( http://coffee-org.github.io/coffee/html/index.html ) 
 
 
 ## Libraries
