@@ -51,7 +51,7 @@ See [coding standards]( http://coffee-org.github.io/coffee/html/page_coding_stan
 
 ## Documentation
 
-[Online documentation]( http://coffee-org.github.io/coffee/ ) 
+[Online documentation]( http://coffee-org.github.io/coffee/html/index.html ) 
 
 
 ## Libraries
