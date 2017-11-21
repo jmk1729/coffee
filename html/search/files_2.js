@@ -10,6 +10,7 @@ var searchData=
   ['clicore_2emd',['CLIcore.md',['../CLIcore_8md.html',1,'']]],
   ['climain_2ec',['CLImain.c',['../CLImain_8c.html',1,'']]],
   ['coding_5fstandards_2emd',['coding_standards.md',['../coding__standards_8md.html',1,'']]],
+  ['coffee_5fmodules_2emd',['coffee_Modules.md',['../coffee__Modules_8md.html',1,'']]],
   ['compilation_2emd',['Compilation.md',['../Compilation_8md.html',1,'']]],
   ['coremod_5farith_2ec',['COREMOD_arith.c',['../COREMOD__arith_8c.html',1,'']]],
   ['coremod_5farith_2eh',['COREMOD_arith.h',['../COREMOD__arith_8h.html',1,'']]],

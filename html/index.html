@@ -33,7 +33,7 @@
   <td style="padding-left: 0.5em;">
    <div id="projectname">coffee
    </div>
-   <div id="projectbrief">Coronafraph Optimization</div>
+   <div id="projectbrief">Coronagraph Optimization</div>
   </td>
  </tr>
  </tbody>
@@ -103,13 +103,14 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="title">Outline </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Coronagraph design and simulation</h1>
+<div class="textblock"><h1>Coronagraph Optimization For Fast Exoplanet Exploration (coffee)</h1>
 <p><a href="https://github.com/coffee-rga/coffee">coffee on github</a></p>
+<hr/>
 <h2>User's Guide</h2>
 <ul>
-<li>page_PIAACMCsimul_Introduction</li>
+<li><a class="el" href="page_PIAACMCsimul_Introduction.html">Introduction</a></li>
 <li><a class="el" href="page_installation.html">Installation</a></li>
-<li>page_PIAACMCsimul_GettingStarted</li>
+<li><a class="el" href="page_PIAACMCsimul_GettingStarted.html">Getting Started</a></li>
 <li><a class="el" href="page_userinput.html">Command Line Interface</a><ul>
 <li><a class="el" href="page_CLI_Overview.html">CLI Overview</a></li>
 <li><a class="el" href="page_readlinekeys.html">Readline Input Keys</a></li>
@@ -118,8 +119,10 @@ $(document).ready(function(){initNavTree('index.html','');});
 </li>
 <li><a class="el" href="page_news.html">News</a></li>
 </ul>
+<hr/>
 <h2>Programmer's Guide</h2>
 <ul>
+<li><a class="el" href="page_WorkingWithGit.html">Working with git</a></li>
 <li><a class="el" href="page_coding_standards.html">Coding Standards</a><ul>
 <li><a class="el" href="page_Compilation.html">Compilation</a></li>
 <li><a class="el" href="page_ModuleFiles.html">Module Files</a></li>
@@ -127,54 +130,53 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li><a class="el" href="page_TemplateSourceCode.html">Template Souce Code</a></li>
 </ul>
 </li>
-<li>page_PIAACMCsimul_Ccode</li>
-<li>page_PIAACMCsimul_DesignSteps_Mono</li>
-<li>page_PIAACMCsimul_DesignSteps_Poly</li>
+<li><a class="el" href="page_PIAACMCsimul_Ccode.html">C code description</a></li>
+<li><a class="el" href="PIAACMCsimul_8h.html#page_PIAACMCsimul_Configuration">List of Configuration Parameters</a></li>
+<li><a class="el" href="page_PIAACMCsimul_DesignSteps_Mono.html">Design steps: Monochromatic design ( #step &lt; 100 )</a></li>
+<li><a class="el" href="page_PIAACMCsimul_DesignSteps_Poly.html">Design steps: Polychromatic design</a></li>
 <li><a class="el" href="page_LoadingModules.html">Loading Modules</a></li>
 </ul>
-<h2>coffee modules</h2>
+<hr/>
+<p>coffee uses milk modules for its command line, memory management, image I/O and standard image computations.</p>
+<h2>milk modules</h2>
 <ul>
 <li><a class="el" href="page_module_CommandLineInterface.html">Module CommandLineInterface</a></li>
+<li><a class="el" href="page_module_ImageStreamIO.html">Module ImageStreamIO</a></li>
 <li><a class="el" href="page_module_00CORE.html">Module 00CORE</a></li>
 <li><a class="el" href="page_module_COREMOD_memory.html">Module COREMOD_memory</a></li>
 <li><a class="el" href="page_module_COREMOD_iofits.html">Module COREMOD_iofits</a></li>
 <li><a class="el" href="page_module_COREMOD_tools.html">Module COREMOD_tools</a></li>
 <li><a class="el" href="page_module_COREMOD_arith.html">Module COREMOD_arith</a></li>
-<li><a class="el" href="page_module_ImageStreamIO.html">Module ImageStreamIO</a></li>
-<li><a class="el" href="page_module_fft.html">Module fft</a></li>
-<li><a class="el" href="page_module_statistic.html">Module statistic</a></li>
-<li><a class="el" href="page_module_WFpropagate.html">Module WFpropagate</a></li>
-<li><a class="el" href="page_module_psf.html">Module psf</a></li>
 <li><a class="el" href="page_module_info.html">Module info</a></li>
-<li><a class="el" href="page_module_kdtree.html">Module kdtree</a></li>
-<li><a class="el" href="page_module_linARfilterPred.html">Module linARfilterPred</a></li>
-<li><a class="el" href="page_module_cudacomp.html">Module cudacomp</a></li>
-<li><a class="el" href="page_module_image_filter.html">Module image_filter</a></li>
 <li><a class="el" href="page_module_image_basic.html">Module image_basic</a></li>
+<li><a class="el" href="page_module_image_filter.html">Module image_filter</a></li>
 <li><a class="el" href="page_module_image_format.html">Module image_format</a></li>
 <li><a class="el" href="page_module_image_gen.html">Module image_gen</a></li>
 <li><a class="el" href="page_module_img_reduce.html">Module img_reduce</a></li>
+<li><a class="el" href="page_module_fft.html">Module fft</a></li>
+<li><a class="el" href="page_module_statistic.html">Module statistic</a></li>
+<li><a class="el" href="page_module_kdtree.html">Module kdtree</a></li>
+<li><a class="el" href="page_module_linARfilterPred.html">Module linARfilterPred</a></li>
 <li><a class="el" href="page_module_linopt_imtools.html">Module linopt_imtools</a></li>
+<li><a class="el" href="page_module_psf.html">Module psf</a></li>
+<li><a class="el" href="page_module_ZernikePolyn.html">Module ZernikePolyn</a></li>
+<li><a class="el" href="page_module_cudacomp.html">Module cudacomp</a></li>
+</ul>
+<h2>coffee modules</h2>
+<ul>
+<li><a class="el" href="page_module_WFpropagate.html">Module WFpropagate</a></li>
 <li><a class="el" href="page_module_OpticsMaterials.html">Module OpticsMaterials</a></li>
 <li><a class="el" href="page_module_OptSystProp.html">Module OptSystProp</a></li>
 <li><a class="el" href="page_module_AOsystSim.html">Module AOsystSim</a></li>
-<li><a class="el" href="page_module_ZernikePolyn.html">Module ZernikePolyn</a></li>
 <li><a class="el" href="page_module_PIAACMCsimul.html">Module PIAACMCsimul</a></li>
 </ul>
-<h2>Developper's tips</h2>
-<p>To get latest modules (master branches) : </p><pre class="fragment">git submodule foreach "(git checkout master; git pull)"
-</pre><p>To get latest modules (dev branches) : </p><pre class="fragment">git submodule foreach "(git checkout dev; git pull)"
-</pre><p>When developing, work in dev branch and set branch to dev in all submodules.</p>
-<p>To synchronize master to latest dev: </p><pre class="fragment">git submodule foreach "(git checkout master; git merge dev)"
-git checkout master
-git merge dev
-git submodule foreach "(git checkout master; git push)"
-git push</pre> </div></div><!-- contents -->
+<hr/>
+ </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Nov 19 2017 23:10:58 for coffee by
+    <li class="footer">Generated on Mon Nov 20 2017 22:10:18 for coffee by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

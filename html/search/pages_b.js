@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['readline_20input_20keys',['Readline Input Keys',['../page_readlinekeys.html',1,'page_userinput']]]
+  ['working_20with_20git',['Working with git',['../page_WorkingWithGit.html',1,'']]]
 ];

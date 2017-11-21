@@ -5,7 +5,7 @@
 m4_define([PROGNAME], coffee)
 m4_define([PVERSION], 0.1.00)
 
-AC_INIT([PROGNAME], [PVERSION], [oliv.guyon@gmail.com], [PROGNAME])
+AC_INIT([PROGNAME], [PVERSION], [https://github.com/coffee-org/coffee/issues], [PROGNAME])
 
 AC_PREREQ(2.61)
 #AC_CONFIG_HEADER([config.h])

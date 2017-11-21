@@ -83,6 +83,7 @@ var searchData=
   ['cnt2',['cnt2',['../struct____attribute____.html#a04f4fb9a1161548cb8522003df752503',1,'__attribute__']]],
   ['code',['code',['../structMaterialIndex.html#a7b54b40a48c454c51cc0403b571dce15',1,'MaterialIndex']]],
   ['coding_5fstandards_2emd',['coding_standards.md',['../coding__standards_8md.html',1,'']]],
+  ['coffee_5fmodules_2emd',['coffee_Modules.md',['../coffee__Modules_8md.html',1,'']]],
   ['cols',['cols',['../structsImage.html#a8afe7b8cf4e980a69f07b4173d05a456',1,'sImage']]],
   ['combine_5f2psf',['combine_2psf',['../psf_8c.html#add41c81f007431113c86618e214b409d',1,'combine_2psf(const char *ID_name, const char *ID_name1, const char *ID_name2, float radius, float index):&#160;psf.c'],['../psf_8h.html#add41c81f007431113c86618e214b409d',1,'combine_2psf(const char *ID_name, const char *ID_name1, const char *ID_name2, float radius, float index):&#160;psf.c']]],
   ['command_5fline',['command_line',['../CLIcore_8c.html#a08a15eb6d82a4967d50502a18fe5f205',1,'CLIcore.c']]],
@@ -287,9 +288,11 @@ var searchData=
   ['cudacomp_5fmatmatmult_5ftestpseudoinverse_5fcli',['CUDACOMP_MatMatMult_testPseudoInverse_cli',['../cudacomp_8c.html#a452a6f095dd28bf63a83be60fdccda6a',1,'cudacomp.c']]],
   ['cudacomp_5fprintgpumatmultconf',['CUDACOMP_printGPUMATMULTCONF',['../cudacomp_8c.html#a1fd7986590f046a9412ba7f1d0f5d3d9',1,'CUDACOMP_printGPUMATMULTCONF(int index):&#160;cudacomp.c'],['../cudacomp_8h.html#a1fd7986590f046a9412ba7f1d0f5d3d9',1,'CUDACOMP_printGPUMATMULTCONF(int index):&#160;cudacomp.c']]],
   ['cudacomp_5ftest_5fcli',['CUDACOMP_test_cli',['../cudacomp_8c.html#ad81526b0b3c245b0f134a3bae42e0d24',1,'cudacomp.c']]],
+  ['coffee_5fmodules',['coffee_Modules',['../md_doc_coffee_Modules.html',1,'']]],
   ['cli_20overview',['CLI Overview',['../page_CLI_Overview.html',1,'page_userinput']]],
   ['coding_20standards',['Coding Standards',['../page_coding_standards.html',1,'']]],
   ['command_20line_20interface_20syntax',['Command Line Interface Syntax',['../page_command_line_interface.html',1,'page_userinput']]],
   ['compilation',['Compilation',['../page_Compilation.html',1,'page_coding_standards']]],
+  ['c_20code_20description',['C code description',['../page_PIAACMCsimul_Ccode.html',1,'']]],
   ['command_20line_20interface',['Command Line Interface',['../page_userinput.html',1,'']]]
 ];

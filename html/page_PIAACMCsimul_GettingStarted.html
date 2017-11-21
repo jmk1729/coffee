@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>FALCON: Getting Started</title>
+<title>coffee: Getting Started</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,9 +31,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">FALCON
+   <div id="projectname">coffee
    </div>
-   <div id="projectbrief">Coronagraph design and simulation</div>
+   <div id="projectbrief">Coronagraph Optimization</div>
   </td>
  </tr>
  </tbody>
@@ -104,16 +104,20 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_GettingStarted.html'
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h2>Copy scripts to local directory</h2>
-<p>Create symbolic link to CLI in system or user path: </p><pre class="fragment">sudo ln -s /&lt;fullpath&gt;/bin/FALCON /usr/local/bin/PIAACMCdesign
+<p>Create symbolic link to CLI in system or user path: </p><pre class="fragment">sudo ln -s /&lt;fullpath&gt;/bin/coffee /usr/local/bin/coffee
 </pre><p>Create symbolic link to syncscripts into work directory: </p><pre class="fragment">cd &lt;workdir&gt;
 ln -s /&lt;fullpath&gt;/src/PIAACMCsimul/scripts/syncscripts .
 </pre><p>Import and setup scripts in work directory (run from &lt;workdir&gt;): </p><pre class="fragment">./syncscripts
+</pre><p>Examples can be loaded in <code>./examples/</code> with: </p><pre class="fragment">./syncscripts -x
 </pre><h2>Configuration Setup</h2>
+<h3>Setup from main script pre-defined configurations</h3>
 <p>Print help for top level script: </p><pre class="fragment">./runPIAACMCdesign -h
 </pre><p>The quickest way to get started is to setup and modify one of the example design scripts provided: </p><pre class="fragment">./runPIAACMCdesign -e 0
 </pre><p>This will configure all necessary files for a specific configuration. You can view parameters with : </p><pre class="fragment">./runPIAACMCdesign -l
-</pre><p>If optimizing in APLC mode (no PIAA optics), type (after the -e command above): </p><pre class="fragment">./runPIAACMCdesign -a
-</pre><h2>Design</h2>
+</pre><p>If optimizing in APLC mode (no PIAA optics, type (after the -e command above): </p><pre class="fragment">./runPIAACMCdesign -a
+</pre><h3>Setup from example script</h3>
+<p>If examples are loaded, one of the <code>example/setup_XXXX</code> script can be copied in the working directory and executed to setup the corresponding configuration</p>
+<h2>Design</h2>
 <p>Design is done with the "-m" option. This command will execute all design steps from 0 to #step-1: </p><pre class="fragment">./runPIAACMCdesign -m &lt;#step&gt;
 </pre><p>To run the full polychromatic design process: </p><pre class="fragment">./runPIAACMCdesign -m 200
 </pre><p>Note that this may take a long time to run ... (days ?). The polychromatic design will:</p>
@@ -136,8 +140,7 @@ tail -f piaacmcconf_i000/mode13*.opt.txt
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="page_UsersGuide.html">User&#39;s Guide</a></li>
-    <li class="footer">Generated on Sun Nov 19 2017 06:53:16 for FALCON by
+    <li class="footer">Generated on Mon Nov 20 2017 22:10:18 for coffee by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
