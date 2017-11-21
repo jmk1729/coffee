@@ -11,12 +11,14 @@ var searchData=
   ['opticsmaterials_5fname',['OPTICSMATERIALS_name',['../OpticsMaterials_8c.html#a9741d9806a3392de60e5513089d9e0bb',1,'OPTICSMATERIALS_name(int code):&#160;OpticsMaterials.c'],['../OpticsMaterials_8h.html#a9741d9806a3392de60e5513089d9e0bb',1,'OPTICSMATERIALS_name(int code):&#160;OpticsMaterials.c']]],
   ['opticsmaterials_5fpha_5flambda',['OPTICSMATERIALS_pha_lambda',['../OpticsMaterials_8c.html#a5823537697aa1bb6681b2733baf48c24',1,'OPTICSMATERIALS_pha_lambda(int material, double z, double lambda):&#160;OpticsMaterials.c'],['../OpticsMaterials_8h.html#a5823537697aa1bb6681b2733baf48c24',1,'OPTICSMATERIALS_pha_lambda(int material, double z, double lambda):&#160;OpticsMaterials.c']]],
   ['optpiaacmcdesign',['OPTPIAACMCDESIGN',['../structOPTPIAACMCDESIGN.html',1,'']]],
-  ['optsyst',['OPTSYST',['../structOPTSYST.html',1,'OPTSYST'],['../PIAACMCsimul_8c.html#afd320a44eac81011bd37a9d649950587',1,'optsyst():&#160;PIAACMCsimul.c']]],
+  ['optsyst',['OPTSYST',['../structOPTSYST.html',1,'OPTSYST'],['../PIAACMCsimul_8c.html#afd320a44eac81011bd37a9d649950587',1,'optsyst():&#160;PIAACMCsimul.c'],['../PIAACMCsimul__initpiaacmcconf_8c.html#afd320a44eac81011bd37a9d649950587',1,'optsyst():&#160;PIAACMCsimul.c']]],
+  ['optsystinit',['optsystinit',['../structPIAACMCsimul__var.html#a4c1297c40501b020908b55dca9b80735',1,'PIAACMCsimul_var']]],
   ['optsystprop_2ec',['OptSystProp.c',['../OptSystProp_8c.html',1,'']]],
   ['optsystprop_2eh',['OptSystProp.h',['../OptSystProp_8h.html',1,'']]],
   ['optsystprop_5fpropagatecube',['OptSystProp_propagateCube',['../OptSystProp_8c.html#a57447b62915b0ccfcb16276c92e7ffe2',1,'OptSystProp_propagateCube(OPTSYST *optsyst, long index, const char *IDin_amp_name, const char *IDin_pha_name, const char *IDout_amp_name, const char *IDout_pha_name, double zprop, int sharedmem):&#160;OptSystProp.c'],['../OptSystProp_8h.html#a57447b62915b0ccfcb16276c92e7ffe2',1,'OptSystProp_propagateCube(OPTSYST *optsyst, long index, const char *IDin_amp_name, const char *IDin_pha_name, const char *IDout_amp_name, const char *IDout_pha_name, double zprop, int sharedmem):&#160;OptSystProp.c']]],
   ['optsystprop_5frun',['OptSystProp_run',['../OptSystProp_8c.html#a2a88f918cdbc5abff31130c01dde8e1a',1,'OptSystProp_run(OPTSYST *optsyst, long index, long elemstart, long elemend, const char *savedir, int sharedmem):&#160;OptSystProp.c'],['../OptSystProp_8h.html#a2a88f918cdbc5abff31130c01dde8e1a',1,'OptSystProp_run(OPTSYST *optsyst, long index, long elemstart, long elemend, const char *savedir, int sharedmem):&#160;OptSystProp.c']]],
   ['optsystsim',['optsystsim',['../AOsystSim_8c.html#acde65e62970671cd323e4c409a5dcd41',1,'AOsystSim.c']]],
   ['orientation',['orientation',['../structGPUMATMULTCONF.html#a8f02a724d8da4661da6e3462e7c37f77',1,'GPUMATMULTCONF']]],
+  ['outtmp_5farray',['outtmp_array',['../structPIAACMCsimul__var.html#a15d04b1a0c64b87a2328baab82debe0f',1,'PIAACMCsimul_var']]],
   ['overwrite',['overwrite',['../structDATA.html#a600cb8c85d463a76ca1dfe9d0097c8f3',1,'DATA']]]
 ];

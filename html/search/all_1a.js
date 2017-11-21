@@ -14,5 +14,9 @@ var searchData=
   ['zernikepolyn_5frmpiston_5fcli',['ZERNIKEPOLYN_rmPiston_cli',['../ZernikePolyn_8c.html#aedcbd216b72931511f1531e8b408cc84',1,'ZernikePolyn.c']]],
   ['zfactor',['zfactor',['../structFOCMASK.html#ae4f8bac28f3d485f900c7236b94a0aa2',1,'FOCMASK']]],
   ['zoneaid',['zoneaID',['../structOPTPIAACMCDESIGN.html#afdfb76344ee9a82f3a5790fcb602ade6',1,'OPTPIAACMCDESIGN']]],
+  ['zonez0_5farray',['zonez0_array',['../structPIAACMCsimul__var.html#aa82784bc6658b680af64db4fd6fdfae8',1,'PIAACMCsimul_var']]],
+  ['zonez1_5farray',['zonez1_array',['../structPIAACMCsimul__var.html#a4653f69e04b79c7de574dcee8213174b',1,'PIAACMCsimul_var']]],
+  ['zonez_5farray',['zonez_array',['../structPIAACMCsimul__var.html#a9aa4a899c3498dfcfbbbf897b3dabf0b',1,'PIAACMCsimul_var']]],
+  ['zonezbest_5farray',['zonezbest_array',['../structPIAACMCsimul__var.html#a773c3b931ed6ee4eda50e4be9454c6a4',1,'PIAACMCsimul_var']]],
   ['zonezid',['zonezID',['../structOPTPIAACMCDESIGN.html#a46c2ef78ec06d39b947a793d0a03dc28',1,'OPTPIAACMCDESIGN']]]
 ];

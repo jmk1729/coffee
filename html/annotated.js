@@ -23,6 +23,7 @@ var annotated =
     [ "MODULE", "structMODULE.html", "structMODULE" ],
     [ "OPTPIAACMCDESIGN", "structOPTPIAACMCDESIGN.html", "structOPTPIAACMCDESIGN" ],
     [ "OPTSYST", "structOPTSYST.html", "structOPTSYST" ],
+    [ "PIAACMCsimul_var", "structPIAACMCsimul__var.html", "structPIAACMCsimul__var" ],
     [ "res_node", "structres__node.html", "structres__node" ],
     [ "savethreadmsg", "structsavethreadmsg.html", "structsavethreadmsg" ],
     [ "sImage", "structsImage.html", "structsImage" ],

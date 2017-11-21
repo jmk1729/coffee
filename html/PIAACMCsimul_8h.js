@@ -1,5 +1,6 @@
 var PIAACMCsimul_8h =
 [
+    [ "PIAACMCsimul_var", "structPIAACMCsimul__var.html", "structPIAACMCsimul__var" ],
     [ "OPTPIAACMCDESIGN", "structOPTPIAACMCDESIGN.html", "structOPTPIAACMCDESIGN" ],
     [ "init_PIAACMCsimul", "PIAACMCsimul_8h.html#afbe4dce014fddfe2292d9128df375bed", null ],
     [ "PIAACMC_FPM_process", "PIAACMCsimul_8h.html#a41f1961ee151a53e40ea4151a3417d3e", null ],

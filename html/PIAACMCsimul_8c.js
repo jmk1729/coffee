@@ -29,11 +29,11 @@ var PIAACMCsimul_8c =
     [ "PIAACMCsimul_rings2sectors_cli", "PIAACMCsimul_8c.html#a8f9c34fd77fb906ae9d4e65d8237b3e6", null ],
     [ "PIAACMCsimul_run", "PIAACMCsimul_8c.html#ae7a68d5c22be1ec10f0c738f56f3bf99", null ],
     [ "PIAACMCsimul_run_cli", "PIAACMCsimul_8c.html#ad5ef3ecc6f7c3e99cd30c19f34caee38", null ],
-    [ "PIAAsimul_initpiaacmcconf", "PIAACMCsimul_8c.html#a85f1459cf776292b7e2fff9932a79252", null ],
     [ "PIAAsimul_loadpiaacmcconf", "PIAACMCsimul_8c.html#a029d653eddbea9d926a6ced9390e6289", null ],
     [ "PIAAsimul_mkSimpleLyotStop", "PIAACMCsimul_8c.html#a68c31c0cff7fd667fe975e4d3ffeba0c", null ],
     [ "PIAAsimul_savepiaacmcconf", "PIAACMCsimul_8c.html#afad859109ca486d90a908bcec11868f3", null ],
     [ "data", "PIAACMCsimul_8c.html#a9842752e03b4de9b4593f1a3b34364ab", null ],
     [ "optsyst", "PIAACMCsimul_8c.html#afd320a44eac81011bd37a9d649950587", null ],
-    [ "piaacmc", "PIAACMCsimul_8c.html#a630b070f5e9d187ea334902ef75682d5", null ]
+    [ "piaacmc", "PIAACMCsimul_8c.html#a630b070f5e9d187ea334902ef75682d5", null ],
+    [ "piaacmcsimul_var", "PIAACMCsimul_8c.html#a64f701e6b95a8718054535b3c56bec24", null ]
 ];
