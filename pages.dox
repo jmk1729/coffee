@@ -1,9 +1,12 @@
 /*! @mainpage Outline
 
 
-#  Coronagraph design and simulation
+#  Coronagraph Optimization For Fast Exoplanet Exploration (coffee)
 
 [coffee on github](https://github.com/coffee-rga/coffee)
+
+
+---
 
 ## User's Guide
 
@@ -17,6 +20,7 @@
 - @ref page_news
 
 
+---
 
 ## Programmer's Guide
 
@@ -26,62 +30,50 @@
 	- @ref page_DocumentingCode
 	- @ref page_TemplateSourceCode
 - @ref page_PIAACMCsimul_Ccode
+- @ref page_PIAACMCsimul_Configuration
 - @ref page_PIAACMCsimul_DesignSteps_Mono
 - @ref page_PIAACMCsimul_DesignSteps_Poly
 - @ref page_LoadingModules
 
 
-## coffee modules
+---
+
+coffee uses milk modules for its command line, memory management, image I/O and standard image computations.
+
+## milk modules
 
 - @ref page_module_CommandLineInterface
+- @ref page_module_ImageStreamIO
 - @ref page_module_00CORE
 - @ref page_module_COREMOD_memory
 - @ref page_module_COREMOD_iofits
 - @ref page_module_COREMOD_tools
 - @ref page_module_COREMOD_arith
-- @ref page_module_ImageStreamIO
-- @ref page_module_fft
-- @ref page_module_statistic
-- @ref page_module_WFpropagate
-- @ref page_module_psf
 - @ref page_module_info
-- @ref page_module_kdtree
-- @ref page_module_linARfilterPred
-- @ref page_module_cudacomp
-- @ref page_module_image_filter
 - @ref page_module_image_basic
+- @ref page_module_image_filter
 - @ref page_module_image_format
 - @ref page_module_image_gen
 - @ref page_module_img_reduce
+- @ref page_module_fft
+- @ref page_module_statistic
+- @ref page_module_kdtree
+- @ref page_module_linARfilterPred
 - @ref page_module_linopt_imtools
+- @ref page_module_psf
+- @ref page_module_ZernikePolyn
+- @ref page_module_cudacomp
+
+## coffee modules
+
+- @ref page_module_WFpropagate
 - @ref page_module_OpticsMaterials
 - @ref page_module_OptSystProp
 - @ref page_module_AOsystSim
-- @ref page_module_ZernikePolyn
 - @ref page_module_PIAACMCsimul
 
-## Developper's tips
 
-To get latest modules (master branches) :
-
-	git submodule foreach "(git checkout master; git pull)"
-
-To get latest modules (dev branches) :
-
-	git submodule foreach "(git checkout dev; git pull)"
-
-
-When developing, work in dev branch and set branch to dev in all submodules.
-
-
-To synchronize master to latest dev:
-	
-	git submodule foreach "(git checkout master; git merge dev)"
-	git checkout master
-	git merge dev
-	git submodule foreach "(git checkout master; git push)"
-	git push
-
+---
 
 */
 
