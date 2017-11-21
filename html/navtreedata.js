@@ -9,6 +9,7 @@ var NAVTREE =
     [ "Installation", "page_installation.html", null ],
     [ "Loading Modules", "page_LoadingModules.html", null ],
     [ "Command Line Interface", "page_userinput.html", "page_userinput" ],
+    [ "Working with git", "page_WorkingWithGit.html", null ],
     [ "C code description", "page_PIAACMCsimul_Ccode.html", null ],
     [ "Design steps: Monochromatic design ( #step < 100 )", "page_PIAACMCsimul_DesignSteps_Mono.html", null ],
     [ "Design steps: Polychromatic design", "page_PIAACMCsimul_DesignSteps_Poly.html", null ],
@@ -49,8 +50,8 @@ var NAVTREEINDEX =
 "functions_vars_d.html",
 "image__filter_8h.html#ab22b31f3ca8d174936a7dc6b1ac2e399",
 "kdtree_8c.html#aeeb3d7c8f548d0f9f91679fe819aa0ca",
-"structBITMAPFILEHEADER.html",
-"structOPTPIAACMCDESIGN.html#a6b13c1628f90db964d8279de9aee4f23"
+"structASPHSURFR.html#ae2386c06994cf2b5a8090bbdee2a7957",
+"structOPTPIAACMCDESIGN.html#a65968979dd96a614a86fd7eb34238e83"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

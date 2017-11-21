@@ -24,6 +24,7 @@
 
 ## Programmer's Guide
 
+- @ref page_WorkingWithGit
 - @ref page_coding_standards
 	- @ref page_Compilation
 	- @ref page_ModuleFiles
