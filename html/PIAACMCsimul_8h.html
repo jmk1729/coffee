@@ -1091,7 +1091,127 @@ Functions</h2></td></tr>
 <p>initializes configuration</p>
 <h1><a class="anchor" id="page_PIAACMCsimul_Configuration"></a>
 List of Configuration Parameters</h1>
-<p>Each parameter is stored on disk as conf/conf_.txt </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Each parameter is stored on disk as conf/conf_.txt</p>
+<p>PIAA OPTICS DESIGN:</p>
+<table class="doxtable">
+<tr>
+<th>Parameter </th><th>Meaning  </th></tr>
+<tr>
+<td>PIAAmode </td><td>PIAA mode (0: classical apodization, 1: PIAA) </td></tr>
+<tr>
+<td>fpmradld </td><td>Focal plane mask radius [l/D] </td></tr>
+<tr>
+<td>PIAAcoeff </td><td>Fraction of PIAA apodization </td></tr>
+<tr>
+<td>coin </td><td>Central obstruction at input beam [beam radius] </td></tr>
+<tr>
+<td>coout </td><td>Central obstruction at output beam [beam radius] </td></tr>
+<tr>
+<td>PIAAmaterial </td><td>PIAA optics material </td></tr>
+<tr>
+<td>PIAAcirc </td><td>FLAG: 1 if PIAA shapes are circular (no Fourier modes) </td></tr>
+<tr>
+<td>REGPIAACCOEFF </td><td>PIAA regularization amplitude, cosine modes </td></tr>
+<tr>
+<td>REGPIAACALPHA </td><td>PIAA regularization power law, cosine modes </td></tr>
+<tr>
+<td>REGPIAAFCOEFF </td><td>PIAA regularization amplitude, Fourier modes </td></tr>
+<tr>
+<td>REGPIAAFALPHA </td><td>PIAA regularization power law, Fourier modes </td></tr>
+</table>
+<p>LYOT STOP(S) DESIGN:</p>
+<table class="doxtable">
+<tr>
+<th>Parameter </th><th>Meaning  </th></tr>
+<tr>
+<td>LStransm </td><td>Lyot stop transmission </td></tr>
+<tr>
+<td>NBls </td><td>Number of Lyot stops </td></tr>
+<tr>
+<td>lambda </td><td>Wavelength for monochromatic design [nm] </td></tr>
+</table>
+<p>FOCAL PLANE MASK DESIGN:</p>
+<table class="doxtable">
+<tr>
+<th>Parameter </th><th>Meaning  </th></tr>
+<tr>
+<td>fpmmaterial </td><td>focal plane mask material </td></tr>
+<tr>
+<td>FPMsectors </td><td>mask geometry: 0=disk, 1=sectors, 2=hexagonal tiling </td></tr>
+<tr>
+<td>NBrings </td><td>number of rings in focal plane mask </td></tr>
+<tr>
+<td>maskradld </td><td>mask outer radius at central wavelength [l/D] </td></tr>
+<tr>
+<td>fpmminsag </td><td>min focal plane mask sag </td></tr>
+<tr>
+<td>fpmmaxsag </td><td>max focal plane mask sag </td></tr>
+<tr>
+<td>fpmregsag_coeff </td><td>sag regularization coefficient </td></tr>
+<tr>
+<td>fpmregsag_alpha </td><td>sag regularization coefficient exponent </td></tr>
+<tr>
+<td>fpmccnbr </td><td>how many central rings replaced by cone (set to 0 if no central cone </td></tr>
+<tr>
+<td>fpmccz </td><td>sag at cone center (sag at cone edge will be midpoint between minsag and maxsag) </td></tr>
+<tr>
+<td>fpmocradld </td><td>outer cone outer radius [l/D] </td></tr>
+<tr>
+<td>fpmocz </td><td>sag at inner edge of outer cone (sag = 0 at outer edge), set to 0 if no outer cone </td></tr>
+</table>
+<p>OPTIMIZATION PARAMETERS:</p>
+<table class="doxtable">
+<tr>
+<th>Parameter </th><th>Meaning  </th></tr>
+<tr>
+<td>mlambda </td><td>central wavelength for polychromatic design [nm] </td></tr>
+<tr>
+<td>mlambdaB </td><td>spectral bandwidth [%] </td></tr>
+<tr>
+<td>nblambda </td><td>Number of wavelength values </td></tr>
+<tr>
+<td>ssize </td><td>source angular size for mask optimization (20: 0.01 l/D; 10: 0.1 l/D) </td></tr>
+<tr>
+<td>extmode </td><td>source extent mode (0: 1 point, 1: 3 points; 2: 6 points) </td></tr>
+</table>
+<p>OPTICAL DESIGN:</p>
+<table class="doxtable">
+<tr>
+<th>Parameter </th><th>Meaning  </th></tr>
+<tr>
+<td>size </td><td>array size </td></tr>
+<tr>
+<td>beamrad </td><td>beam radius [mm] </td></tr>
+<tr>
+<td>pscale </td><td>pixel scale in pupil [m/pix] </td></tr>
+<tr>
+<td>Fratio </td><td>F ratio at focal plane mask </td></tr>
+<tr>
+<td>PIAAr0lim </td><td>outer edge of PIAA optic 0 [beam radius unit] </td></tr>
+<tr>
+<td>PIAAr1lim </td><td>outer edge of PIAA optic 1 [beam radius unit] </td></tr>
+<tr>
+<td>PIAAsep </td><td>distance between PIAA optics [m] </td></tr>
+<tr>
+<td>PIAA0pos </td><td>PIAA optic 0 distance from pupil plane [m] </td></tr>
+<tr>
+<td>invPIAAmode </td><td>0: no inv PIAA, 1: inv PIAA after Lyot stops, 2: inv PIAA before Lyot stops </td></tr>
+<tr>
+<td>prePIAA0maskpos </td><td>pre-PIAA optic 0 mask distance from pupil plane <a href="if prePIAA0mask.fits exists">m</a> </td></tr>
+<tr>
+<td>postPIAA0maskpos </td><td>post-PIAA optic 0 mask distance from pupil plane <a href="if postPIAA0mask.fits exits">m</a> </td></tr>
+<tr>
+<td>piaaNBCmodesmax </td><td>maximum number of radial cosine modes for PIAA optics </td></tr>
+<tr>
+<td>piaaCPAmax </td><td>maximum spatial frequency (CPA) for PIAA optics </td></tr>
+<tr>
+<td>LyotZmin </td><td>minimum value for Lyot stop(s) conjugation range [m] - relative to element named "post focal plane mask pupil" </td></tr>
+<tr>
+<td>LyotZmax </td><td>maximum value for Lyot stop(s) conjugation range [m] - relative to element named "post focal plane mask pupil" </td></tr>
+<tr>
+<td>pupoutmaskrad </td><td>output pupil mask radius (scaled to pupil radius) </td></tr>
+</table>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">piaacmctype</td><td>Type of system: 0=idealized mask, 1=physical mask </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">fpmradld</td><td>Focal plane mask nominal radius </td></tr>
@@ -1184,7 +1304,7 @@ List of Configuration Parameters</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a43bbe342066ce7b2de1328729e4bb5e.html">PIAACMCsimul</a></li><li class="navelem"><a class="el" href="PIAACMCsimul_8h.html">PIAACMCsimul.h</a></li>
-    <li class="footer">Generated on Mon Nov 20 2017 21:18:50 for coffee by
+    <li class="footer">Generated on Mon Nov 20 2017 21:57:58 for coffee by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
