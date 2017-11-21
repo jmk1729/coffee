@@ -606,6 +606,16 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<h2>Mode 1: Optimize Lyot stop positions</h2>
+<p>Lyot stop positions are encoded as piaacmc[0].LyotStop_zpos</p>
+<p>there can be multiple LyotStop_zpos</p>
+<p>Vary these zpos, looking for the best contrast returned by PIAACMCsimul_computePSF</p>
+<p>Search is performed by iterative refined marching</p>
+<h2>Mode 2</h2>
+<p>Optimize focal plane mask transmission for monochromatic idealized PIAACMC</p>
+<p>For monochromatic, idealized PIAACMC, find the scalar transimssion of the uniform focal plane mask that provides best contrast in the evaluation zone</p>
+<p>Very similar to the Lyot stop search in mode 1: iterative refined marching, changing the the transmission value piaacmc[0].fpmaskamptransm, which is between 0 and 1</p>
+<p>uses single on-axis light source</p>
 <p>identify post focal plane pupil plane (first pupil after focal plane mask)</p>
 <p>compute contrast curve</p>
 <p>compute contrast curve measure average contrast value, 2-6 lambda/D </p>
@@ -1304,7 +1314,7 @@ List of Configuration Parameters</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a43bbe342066ce7b2de1328729e4bb5e.html">PIAACMCsimul</a></li><li class="navelem"><a class="el" href="PIAACMCsimul_8h.html">PIAACMCsimul.h</a></li>
-    <li class="footer">Generated on Mon Nov 20 2017 22:05:58 for coffee by
+    <li class="footer">Generated on Tue Nov 21 2017 08:32:33 for coffee by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
