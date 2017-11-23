@@ -45,14 +45,14 @@ var NAVTREEINDEX =
 "COREMOD__arith_8c.html#a64398243ee9e448b4f22dc306c11641c",
 "COREMOD__arith_8h.html#ab2028d29dca515a1955424fb1744ec43",
 "COREMOD__memory_8h.html#a0a48a63c3f53185b466c5e6bbd092bec",
-"PIAACMCsimul_8c.html#a927c68f1cdd99667733400fd49d1b957",
-"coronagraphs_8c.html",
-"functions_u.html",
-"image__filter_8h.html#a35a50c8f0a4850f645ecf19c89316f03",
-"kdtree_8c.html#aa78fd42b8fe94f37a13bfc07cd5e613f",
-"structASPHSURFM.html",
-"structOPTPIAACMCDESIGN.html#a4d8d03c42ff2aec6c5b974d80d086a5e",
-"structyy__buffer__state.html#a58aa927f098b99d99e75da80f9b681ef"
+"PIAACMCsimul_8c.html#ab0be35554efa0c56285e36d2d8f202d8",
+"calc__flex_8c.html#a9842752e03b4de9b4593f1a3b34364ab",
+"functions.html",
+"image__filter_8c.html#a23b2f9ef65acd5d400c040477d866480",
+"info_8h.html#aee841252488f94e44a90f2c82c8a1606",
+"statistic_8c.html#a42f79098f976305090856a56430e7bcd",
+"structOPTPIAACMCDESIGN.html#a01002138c2aeb8f60ce18ab70bac6a15",
+"structsImage.html#aa6f9954c2c570315820119012e7ea1dd"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

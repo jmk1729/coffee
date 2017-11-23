@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_Ccode.html','');});
 <div class="contents">
 <div class="textblock"><p>Source code is in file <a class="el" href="PIAACMCsimul_8c.html">PIAACMCsimul.c</a></p>
 <h2>PIAACMC_designcodes</h2>
-<p>The main function in the source code is <a class="el" href="PIAACMCsimul_8c.html#a0b00332b096e51006fb9240491faf744" title="Main simulation routine. ">PIAACMCsimul_exec()</a>, which takes two arguments: the configuration index (usually a 3 digit integer) and the mode (integer) which describes the operation to be performed to the PIAACMC design.</p>
+<p>The main function in the source code is <a class="el" href="PIAACMCsimul_8h.html#a0b00332b096e51006fb9240491faf744" title="Main simulation routine. ">PIAACMCsimul_exec()</a>, which takes two arguments: the configuration index (usually a 3 digit integer) and the mode (integer) which describes the operation to be performed to the PIAACMC design.</p>
 <table class="doxtable">
 <tr>
 <th>Mode </th><th>Description  </th></tr>
@@ -187,10 +187,10 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_Ccode.html','');});
 </ul>
 <h3>Code breakdown</h3>
 <ul>
-<li><a class="el" href="PIAACMCsimul_8c.html#a0b00332b096e51006fb9240491faf744" title="Main simulation routine. ">PIAACMCsimul_exec()</a> :<ul>
+<li><a class="el" href="PIAACMCsimul_8h.html#a0b00332b096e51006fb9240491faf744" title="Main simulation routine. ">PIAACMCsimul_exec()</a> :<ul>
 <li><a class="el" href="PIAACMCsimul_8h.html#a85f1459cf776292b7e2fff9932a79252" title="initializes configuration ">PIAAsimul_initpiaacmcconf()</a>: Load/Creates/initializes piaacmcconf structure and directory<ul>
 <li>perform default initialization</li>
-<li><a class="el" href="PIAACMCsimul_8c.html#a029d653eddbea9d926a6ced9390e6289" title="Load configuration. ">PIAAsimul_loadpiaacmcconf()</a>: Loading PIAACMC configuration from "piaacmcconfxxx/piaacmcparams.conf" if it exists</li>
+<li><a class="el" href="PIAACMCsimul_8h.html#a029d653eddbea9d926a6ced9390e6289" title="Load configuration. ">PIAAsimul_loadpiaacmcconf()</a>: Loading PIAACMC configuration from "piaacmcconfxxx/piaacmcparams.conf" if it exists</li>
 <li>Creating/loading Cmodes and Fmodes</li>
 <li>IMPORT / CREATE PIAA SHAPES<ul>
 <li>create 2D prolate iteratively</li>
@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_Ccode.html','');});
 </li>
 <li>MAKE FOCAL PLANE MASK</li>
 <li>MAKE LYOT STOPS</li>
-<li><a class="el" href="PIAACMCsimul_8c.html#afad859109ca486d90a908bcec11868f3" title="Save configuration. ">PIAAsimul_savepiaacmcconf()</a>: save configuration</li>
+<li><a class="el" href="PIAACMCsimul_8h.html#afad859109ca486d90a908bcec11868f3" title="Save configuration. ">PIAAsimul_savepiaacmcconf()</a>: save configuration</li>
 </ul>
 </li>
 <li><a class="el" href="PIAACMCsimul_8c.html#a0ae7439a20fe5267506bc7d1e0533f08">PIAACMCsimul_makePIAAshapes()</a>: construct PIAA shapes from fitting coefficients<ul>
@@ -454,7 +454,7 @@ Complex amplitude is shown AFTER the element has been applied, in the plane of t
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 21 2017 11:47:28 for coffee by
+    <li class="footer">Generated on Tue Nov 21 2017 17:31:27 for coffee by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

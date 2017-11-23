@@ -43,35 +43,45 @@ coffee uses milk modules for its command line, memory management, image I/O and 
 
 ## milk modules
 
-- @ref page_module_CommandLineInterface
-- @ref page_module_ImageStreamIO
-- @ref page_module_00CORE
-- @ref page_module_COREMOD_memory
-- @ref page_module_COREMOD_iofits
-- @ref page_module_COREMOD_tools
-- @ref page_module_COREMOD_arith
-- @ref page_module_info
-- @ref page_module_image_basic
-- @ref page_module_image_filter
-- @ref page_module_image_format
-- @ref page_module_image_gen
-- @ref page_module_img_reduce
-- @ref page_module_fft
-- @ref page_module_statistic
-- @ref page_module_kdtree
-- @ref page_module_linARfilterPred
-- @ref page_module_linopt_imtools
-- @ref page_module_psf
-- @ref page_module_ZernikePolyn
-- @ref page_module_cudacomp
+cacao builds on the milk package and framework. Command line interface, memory management and general purpose image processing functions are provided by the milk modules.
+
+
+Module                  | Description                          | Souce Code Reference         |
+------------------------|--------------------------------------|------------------------------|
+CommandLineInterface    | Command interpreter                  |   @ref CLIcore.h             |
+ImageStreamIO           | Image format and low-level routines  |   @ref ImageStreamIO.h       |
+00CORE                  | Core functions                       |   @ref 00CORE.h              |
+COREMOD_memory          | Memory management, image creation    |   @ref COREMOD_memory.h      |
+COREMOD_iofits          | Read and write FITS files            |   @ref COREMOD_iofits.h      |
+COREMOD_tools           | Misc frequently used functions       |   @ref COREMOD_tools.h       |
+COREMOD_arith           | Arithmetic operations on images      |   @ref COREMOD_arith.h       |
+info                    | Image information                    |   @ref info.h                |
+image_basic             | Frequently used image functions      |   @ref image_basic.h         |
+image_filter            | Image filtering, convolution         |   @ref image_filter.h        |
+image_format            | Read/write images in several formats |   @ref image_format.h        |
+image_gen               | Generate useful images               |   @ref image_gen.h           |
+img_reduce              | Combine raw images into single image |   @ref img_reduce.h          |
+fft                     | Wrapper to FFTW and other functions  |   @ref fft.h                 |
+statistic               | Statistical tools and analysis       |   @ref statistic.h           |
+kdtree                  | k-d tree                             |   @ref kdtree.h              |
+linARfilterPred         | Linear predictive filtering          |   @ref linARfilterPred.h     |
+linopt_imtools.h        | Linear optimization tools            |   @ref linopt_imtools.h      |
+psf                     | Point Spread Function analysis       |   @ref psf.h                 |
+ZernikePolyn            | Zernike Polynomials                  |   @ref ZernikePolyn.h        |
+cudacomp                | Cuda wrapper                         |   @ref cudacomp.h            |
+
+
 
 ## coffee modules
 
-- @ref page_module_WFpropagate
-- @ref page_module_OpticsMaterials
-- @ref page_module_OptSystProp
-- @ref page_module_AOsystSim
-- @ref page_module_PIAACMCsimul
+
+Module                  | Description                          | Souce Code Reference         |
+------------------------|--------------------------------------|------------------------------|
+WFpropagate             | Wavefront optical propagation        | @ref WFpropagate.h           |
+OpticsMaterials         | Materials optical properties         | @ref OpticsMaterials.h       |
+OptSystProp             | Optical propagration through system  | @ref OptSystProp.h           |
+AOsystSim               | Simple approx AO system simulation   | @ref AOsystSim.h             |
+PIAACMCsimul            | PIAA type coronagraph simulation     | @ref PIAACMCsimul.h          |
 
 
 ---

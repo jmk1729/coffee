@@ -1100,90 +1100,6 @@ Functions</h2></td></tr>
 
 <p>initializes configuration </p>
 <p>initializes configuration</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">piaacmctype</td><td>Type of system: 0=idealized mask, 1=physical mask </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fpmradld</td><td>Focal plane mask nominal radius </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">centobs0</td><td>Input central obstruction </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">centobs1</td><td>Output central obstruction </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">WFSmode</td><td>Number of DMs (0: no WFC) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">load</td><td>if 1, attempt to load configuration from file</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>piaacmctype:</p><ul>
-<li>0: if configuration does not exist, create Monochromatic idealized PIAACMC, otherwise, read configuration</li>
-<li>1: physical mask </li>
-</ul>
-<p>Wavefront control </p>
-
-</div>
-</div>
-<a class="anchor" id="a029d653eddbea9d926a6ced9390e6289"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int PIAAsimul_loadpiaacmcconf </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>dname</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Load configuration. </p>
-
-</div>
-</div>
-<a class="anchor" id="a68c31c0cff7fd667fe975e4d3ffeba0c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">long PIAAsimul_mkSimpleLyotStop </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>ID_name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>rin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>rout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="afad859109ca486d90a908bcec11868f3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int PIAAsimul_savepiaacmcconf </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>dname</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Save configuration. </p>
 <h1><a class="anchor" id="page_PIAACMCsimul_Configuration"></a>
 List of Configuration Parameters</h1>
 <p>Each parameter is stored on disk as conf/conf_.txt</p>
@@ -1306,6 +1222,90 @@ List of Configuration Parameters</h1>
 <tr>
 <td>pupoutmaskrad </td><td>output pupil mask radius (scaled to pupil radius) </td></tr>
 </table>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">piaacmctype</td><td>Type of system: 0=idealized mask, 1=physical mask </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fpmradld</td><td>Focal plane mask nominal radius </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">centobs0</td><td>Input central obstruction </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">centobs1</td><td>Output central obstruction </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">WFSmode</td><td>Number of DMs (0: no WFC) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">load</td><td>if 1, attempt to load configuration from file</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>piaacmctype:</p><ul>
+<li>0: if configuration does not exist, create Monochromatic idealized PIAACMC, otherwise, read configuration</li>
+<li>1: physical mask </li>
+</ul>
+<p>Wavefront control </p>
+
+</div>
+</div>
+<a class="anchor" id="a029d653eddbea9d926a6ced9390e6289"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PIAAsimul_loadpiaacmcconf </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load configuration. </p>
+
+</div>
+</div>
+<a class="anchor" id="a68c31c0cff7fd667fe975e4d3ffeba0c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long PIAAsimul_mkSimpleLyotStop </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ID_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>rin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>rout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afad859109ca486d90a908bcec11868f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PIAAsimul_savepiaacmcconf </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Save configuration. </p>
 
 </div>
 </div>
@@ -1315,7 +1315,7 @@ List of Configuration Parameters</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a43bbe342066ce7b2de1328729e4bb5e.html">PIAACMCsimul</a></li><li class="navelem"><a class="el" href="PIAACMCsimul_8h.html">PIAACMCsimul.h</a></li>
-    <li class="footer">Generated on Tue Nov 21 2017 11:47:28 for coffee by
+    <li class="footer">Generated on Tue Nov 21 2017 17:31:27 for coffee by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
