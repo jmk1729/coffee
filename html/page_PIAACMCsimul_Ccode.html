@@ -33,7 +33,7 @@
   <td style="padding-left: 0.5em;">
    <div id="projectname">coffee
    </div>
-   <div id="projectbrief">Coronagraph Optimization</div>
+   <div id="projectbrief">Coronagraph Optimization For Fast Exoplanet Exploration</div>
   </td>
  </tr>
  </tbody>
@@ -196,7 +196,7 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_Ccode.html','');});
 <li>create 2D prolate iteratively</li>
 <li><a class="el" href="PIAACMCsimul_8h.html#a0871e75df183df80cf726eb6593cd7b4">PIAACMCsimul_load2DRadialApodization()</a>:fit PIAA shapes with Cosine modes</li>
 <li><a class="el" href="PIAACMCsimul_8h.html#af0a83785124bcdb0096fc0e831965b4e">PIAACMCsimul_init_geomPIAA_rad()</a>: compute radial PIAA sag from cosine apodization fit</li>
-<li><a class="el" href="PIAACMCsimul_8h.html#a27cdd1e7d226e0e0120706737460e388">PIAACMCsimul_mkPIAAMshapes_from_RadSag()</a>: Make 2D sag shapes from radial PIAA sag</li>
+<li><a class="el" href="PIAACMCsimul_8h.html#a27cdd1e7d226e0e0120706737460e388" title="Make PIAA OPD screens from radial sag profile. ">PIAACMCsimul_mkPIAAMshapes_from_RadSag()</a>: Make 2D sag shapes from radial PIAA sag</li>
 </ul>
 </li>
 <li>MAKE FOCAL PLANE MASK</li>
@@ -208,7 +208,7 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_Ccode.html','');});
 <li>construct 2D PIAA mirror shapes from piaa0Cmodescoeff, piaa0Fmodescoeff, piaa1Cmodescoeff, piaa1Fmodescoeff</li>
 </ul>
 </li>
-<li><a class="el" href="PIAACMCsimul_8h.html#a0650545f10bc1e359093510f12a9f9f6">PIAACMCsimul_computePSF()</a>: Compute PSF</li>
+<li><a class="el" href="PIAACMCsimul_8h.html#a0650545f10bc1e359093510f12a9f9f6" title="Compute PSF. ">PIAACMCsimul_computePSF()</a>: Compute PSF</li>
 </ul>
 </li>
 </ul>
@@ -363,7 +363,7 @@ Complex amplitude is shown AFTER the element has been applied, in the plane of t
 <tr>
 <th>Plane index </th><th>description  </th></tr>
 <tr>
-<td>./piaaconfxxx/scoringmask0.fits </td><td>Evaluation points in focal plane, hardcoded in <a class="el" href="PIAACMCsimul_8h.html#a0650545f10bc1e359093510f12a9f9f6">PIAACMCsimul_computePSF()</a> </td></tr>
+<td>./piaaconfxxx/scoringmask0.fits </td><td>Evaluation points in focal plane, hardcoded in <a class="el" href="PIAACMCsimul_8h.html#a0650545f10bc1e359093510f12a9f9f6" title="Compute PSF. ">PIAACMCsimul_computePSF()</a> </td></tr>
 <tr>
 <td>./piaaconfxxx/CnormFactor.txt </td><td>PSF normalization factor used to compute contrast </td></tr>
 <tr>
@@ -390,7 +390,7 @@ Complex amplitude is shown AFTER the element has been applied, in the plane of t
 </ul>
 <p>Note that the last 3 functions are wrapped togeter in the computePSF function, which allows multi-point (extended sources) :</p>
 <ul>
-<li><code><a class="el" href="PIAACMCsimul__computePSF_8c.html#a0650545f10bc1e359093510f12a9f9f6">PIAACMCsimul_computePSF(float xld, float yld, long startelem, long endelem, int savepsf, int sourcesize, int extmode, int outsave)</a></code> : compute PSF<ul>
+<li><code><a class="el" href="PIAACMCsimul__computePSF_8c.html#a0650545f10bc1e359093510f12a9f9f6" title="Compute PSF. ">PIAACMCsimul_computePSF(float xld, float yld, long startelem, long endelem, int savepsf, int sourcesize, int extmode, int outsave)</a></code> : compute PSF<ul>
 <li><code>PIAACMCsimul_init(piaacmc, 0, xld+rad1, yld)</code></li>
 <li><code>PIAACMCsimul_makePIAAshapes(piaacmc, 0)</code></li>
 <li><code>OptSystProp_run(optsyst, 0, startelem, optsyst[0].NBelem, piaacmcconfdir, 0)</code></li>
@@ -454,7 +454,7 @@ Complex amplitude is shown AFTER the element has been applied, in the plane of t
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Nov 23 2017 11:41:55 for coffee by
+    <li class="footer">Generated on Thu Nov 23 2017 23:49:39 for coffee by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

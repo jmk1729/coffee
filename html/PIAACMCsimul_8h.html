@@ -33,7 +33,7 @@
   <td style="padding-left: 0.5em;">
    <div id="projectname">coffee
    </div>
-   <div id="projectbrief">Coronagraph Optimization</div>
+   <div id="projectbrief">Coronagraph Optimization For Fast Exoplanet Exploration</div>
   </td>
  </tr>
  </tbody>
@@ -161,6 +161,7 @@ Functions</h2></td></tr>
 <tr class="memitem:af0a83785124bcdb0096fc0e831965b4e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PIAACMCsimul_8h.html#af0a83785124bcdb0096fc0e831965b4e">PIAACMCsimul_init_geomPIAA_rad</a> (const char *IDapofit_name)</td></tr>
 <tr class="separator:af0a83785124bcdb0096fc0e831965b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27cdd1e7d226e0e0120706737460e388"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PIAACMCsimul_8h.html#a27cdd1e7d226e0e0120706737460e388">PIAACMCsimul_mkPIAAMshapes_from_RadSag</a> (const char *fname, const char *ID_PIAAM0_name, const char *ID_PIAAM1_name)</td></tr>
+<tr class="memdesc:a27cdd1e7d226e0e0120706737460e388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make PIAA OPD screens from radial sag profile.  <a href="#a27cdd1e7d226e0e0120706737460e388">More...</a><br /></td></tr>
 <tr class="separator:a27cdd1e7d226e0e0120706737460e388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ae7439a20fe5267506bc7d1e0533f08"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PIAACMCsimul_8h.html#a0ae7439a20fe5267506bc7d1e0533f08">PIAACMCsimul_makePIAAshapes</a> (<a class="el" href="structOPTPIAACMCDESIGN.html">OPTPIAACMCDESIGN</a> *design, long index)</td></tr>
 <tr class="separator:a0ae7439a20fe5267506bc7d1e0533f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,6 +171,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a68c31c0cff7fd667fe975e4d3ffeba0c"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PIAACMCsimul_8h.html#a68c31c0cff7fd667fe975e4d3ffeba0c">PIAAsimul_mkSimpleLyotStop</a> (const char *ID_name, float rin, float rout)</td></tr>
 <tr class="separator:a68c31c0cff7fd667fe975e4d3ffeba0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dda471518af5b254f0fecef2e9e01aa"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PIAACMCsimul_8h.html#a7dda471518af5b254f0fecef2e9e01aa">PIAACMCsimul_optimizeLyotStop</a> (const char *IDamp_name, const char *IDpha_name, const char *IDincoh_name, float zmin, float zmax, double throughput, long NBz, long NBmasks)</td></tr>
+<tr class="memdesc:a7dda471518af5b254f0fecef2e9e01aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lyot stops positions from zmin to zmax relative to current, working back (light goes from 0 to zmax)  <a href="#a7dda471518af5b254f0fecef2e9e01aa">More...</a><br /></td></tr>
 <tr class="separator:a7dda471518af5b254f0fecef2e9e01aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98061bcad9f81a791a0317d47f564736"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PIAACMCsimul_8h.html#a98061bcad9f81a791a0317d47f564736">PIAACMCsimul_mkLyotMask</a> (const char *IDincoh_name, const char *IDmc_name, const char *IDzone_name, double throughput, const char *IDout_name)</td></tr>
 <tr class="separator:a98061bcad9f81a791a0317d47f564736"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,8 +198,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:a0b00332b096e51006fb9240491faf744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main simulation routine.  <a href="#a0b00332b096e51006fb9240491faf744">More...</a><br /></td></tr>
 <tr class="separator:a0b00332b096e51006fb9240491faf744"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0650545f10bc1e359093510f12a9f9f6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PIAACMCsimul_8h.html#a0650545f10bc1e359093510f12a9f9f6">PIAACMCsimul_computePSF</a> (float xld, float yld, long startelem, long endelem, int savepsf, int sourcesize, int extmode, int outsave)</td></tr>
+<tr class="memdesc:a0650545f10bc1e359093510f12a9f9f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute PSF.  <a href="#a0650545f10bc1e359093510f12a9f9f6">More...</a><br /></td></tr>
 <tr class="separator:a0650545f10bc1e359093510f12a9f9f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01a310e824dd36a081cc901e7ff290d5"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PIAACMCsimul_8h.html#a01a310e824dd36a081cc901e7ff290d5">PIAACMCsimul_CA2propCubeInt</a> (const char *IDamp_name, const char *IDpha_name, float zmin, float zmax, long NBz, const char *IDout_name)</td></tr>
+<tr class="memdesc:a01a310e824dd36a081cc901e7ff290d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propagate complex amplitude image into intensity map cube.  <a href="#a01a310e824dd36a081cc901e7ff290d5">More...</a><br /></td></tr>
 <tr class="separator:a01a310e824dd36a081cc901e7ff290d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7a68d5c22be1ec10f0c738f56f3bf99"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PIAACMCsimul_8h.html#ae7a68d5c22be1ec10f0c738f56f3bf99">PIAACMCsimul_run</a> (const char *confindex, long mode)</td></tr>
 <tr class="separator:ae7a68d5c22be1ec10f0c738f56f3bf99"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -505,7 +509,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>propagate complex amplitude image into intensity map cube </p>
+
+<p>Propagate complex amplitude image into intensity map cube. </p>
 
 </div>
 </div>
@@ -568,11 +573,66 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>returns average contrast in evaluation zone</p>
-<p>source size = 1e-{sourcesize*0.1}, except if sourcesize = 0 (point source) sourcesize is a 2-digit number ( 10 = 0.1 l/D, 20 = 0.01 l/D etc..)</p>
-<p>extmode = 0 : 1 point (point source) extmode = 1 : 3 point sources, 120 apart on circle radius = source size extmode = 2 : 6 point sources. 3 as above on circle radius 1/sqrt(2.5) + 3 on outer circle, radius 2/sqrt(2.5), 120 apart, clockled 60 deg off inner points</p>
-<p>if opderrcube exists, include each slice as a WF mode</p>
-<p>PSF is held in shared memory by default </p>
+
+<p>Compute PSF. </p>
+<dl class="section return"><dt>Returns</dt><dd>Average contrast in evaluation zone</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">xld</td><td>float: Source X position [l/D] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">yld</td><td>float: Source Y position [l/D] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">startelem</td><td>long : First element in propagation </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">endelem</td><td>long : Last element in propagation </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">savepsf</td><td>int : Save PSF flag </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sourcezise</td><td>int : Source size (10x log10) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">extmode</td><td>int : Source extended type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">outsave</td><td>int : Save output flag</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Source is defined by parameters sourcesize and extmode :</p><ul>
+<li>source size = 1e-{sourcesize*0.1}, except if sourcesize = 0 (point source)</li>
+<li>sourcesize is a 2-digit number ( 10 = 0.1 l/D, 20 = 0.01 l/D etc..)</li>
+<li>extmode = 0 : 1 point (point source)</li>
+<li>extmode = 1 : 3 point sources, 120 apart on circle radius = source size</li>
+<li>extmode = 2 : 6 point sources. 3 as above on circle radius 1/sqrt(2.5) + 3 on outer circle, radius 2/sqrt(2.5), 120 apart, clockled 60 deg off inner points</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>If opderrcube exists, include each slice as a WF mode</dd></dl>
+<p>PSF is held in shared memory by default </p><hr/>
+<h3>Output</h3>
+<table class="doxtable">
+<tr>
+<th>name </th><th>type </th><th>Description  </th></tr>
+<tr>
+<td>scoringmask </td><td>2D image </td><td>focal plane points used for evaluation </td></tr>
+<tr>
+<td>&lt;piaacmcdir&gt;/scoringmask&lt;N&gt;.fits </td><td>2D FITS </td><td>focal plane points used for evaluation </td></tr>
+<tr>
+<td>imvec </td><td>1D image </td><td>output vector </td></tr>
+<tr>
+<td>psfi0 </td><td>3D image </td><td>output PSF </td></tr>
+</table>
+<hr/>
+ <hr/>
+ <h3>Create scoring mask if it doesn't exist</h3>
+<p>The scoring mask is the array of evaluation points on the focal plane</p>
+<h2>Fast PSF computattion (if piaacmcsimul_var.computePSF_FAST_FPMresp = 1)</h2>
+<dl class="section note"><dt>Note</dt><dd>Only possible if mode 11 has already been executed</dd></dl>
+<p>Compute the PSF as the complex amplitude for the evaluation points on the focal plane for a given FPM zone thickness based on the FPMresp array computed in mode 11</p>
+<p>PSF result is stored in outtmp_array</p>
+<ul>
+<li>Use <code>imvect</code> for storage if it exists, or create it</li>
+<li>Write the result into <code>imvect</code> </li>
+<li>Total flux in the output vector is stored in <code>piaacmcsimul_var.PIAACMCSIMUL_VAL0</code> as total flux</li>
+</ul>
+<p>set <code>value</code> to average value per area normalized to flux</p>
+<h2>Full/Slow PSF computation (if piaacmcsimul_var.computePSF_FAST_FPMresp = 0)</h2>
+<p>The PSF for an extended source is approximated as a collection of point sources. Sourcesize determines the separation of the point sources</p>
+<h3>OPTIONAL: Add OPD error to list of modes</h3>
+<ul>
+<li>Average over all the PSFs we've created to simulate this extended source</li>
+<li>If <code>outsave</code> = 1, save PSF to FITS file</li>
+<li>If <code>outsave</code> = 1, save flux to txt file </li>
+</ul>
 
 </div>
 </div>
@@ -608,18 +668,75 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<hr/>
 <h2>Mode 1: Optimize Lyot stop positions</h2>
 <p>Lyot stop positions are encoded as piaacmc[0].LyotStop_zpos</p>
 <p>there can be multiple LyotStop_zpos</p>
 <p>Vary these zpos, looking for the best contrast returned by PIAACMCsimul_computePSF</p>
 <p>Search is performed by iterative refined marching</p>
+<hr/>
 <h2>Mode 2: Optimize focal plane mask transmission for monochromatic idealized PIAACMC</h2>
 <p>For monochromatic, idealized PIAACMC, find the scalar transimssion of the uniform focal plane mask that provides best contrast in the evaluation zone</p>
 <p>Very similar to the Lyot stop search in mode 1: iterative refined marching, changing the the transmission value piaacmc[0].fpmaskamptransm, which is between 0 and 1</p>
-<p>uses single on-axis light source</p>
-<p>identify post focal plane pupil plane (first pupil after focal plane mask)</p>
+<p>Uses single on-axis light source</p>
+<h3>Initialize as in mode 0</h3>
+<h3>Initialize search range and step</h3>
+<h3>Scan parameter value</h3>
+<p>While within the search loop :</p>
+<ul>
+<li>Call <a class="el" href="PIAACMCsimul_8h.html#a85f1459cf776292b7e2fff9932a79252" title="initializes configuration ">PIAAsimul_initpiaacmcconf()</a></li>
+<li>call <a class="el" href="PIAACMCsimul_8h.html#a0650545f10bc1e359093510f12a9f9f6" title="Compute PSF. ">PIAACMCsimul_computePSF()</a> to evaluate design</li>
+<li>write entry to output log file</li>
+<li>increment parameter</li>
+</ul>
+<hr/>
+<h2>Mode 3: Calibrate, no focal plane mask (not currently used)</h2>
+<p>compute PSF and contrast with no focal plane mask with the current design provides the denominator for the contrast estimate saved by PIAACMCsimul_computePSF as fits file "psfi0"</p>
+<hr/>
+<h2>Mode 4: Optimize PIAA optics shapes, cosine modes only (not currently used, replaced by mode 40. skipping)</h2>
+<hr/>
+<h2>Mode 5: Optimize Lyot stops shapes and positions</h2>
+<h3>Initialize as in mode 0</h3>
+<h3>Load CLI variables as appropriate</h3>
+<ul>
+<li>&lt;- <b>PIAACMC_nbpropstep</b> : # of propagation steps along the beam</li>
+<li>&lt;- <b>PIAACMC_lstransm</b> : desired Lyot stop transmission</li>
+</ul>
+<h3>Identify post focal plane pupil plane (first pupil after focal plane mask)</h3>
+<p>Provides reference complex amplitude plane for downstream analysis</p>
+<h3>Compute incoherent 3D illumination near pupil plane</h3>
+<p>Multiple off-axis sources are propagated and the corresponding intensities added</p><ul>
+<li>-&gt; <b>OAincohc</b> Output incoherent image (3D)</li>
+</ul>
+<p>OAincohc is the summed light "all" from off-axis sources in the pupil, including the on-axis source(!), giving intensity contribution of all off-axis sources in order to preserve the intensity of the off-axis in the design. load OAincohc if exist, maybe we've been here before</p>
+<h3>Compute on-axis PSF 3D intensity to define light to reject</h3>
+<p>call function <a class="el" href="PIAACMCsimul_8h.html#a01a310e824dd36a081cc901e7ff290d5" title="Propagate complex amplitude image into intensity map cube. ">PIAACMCsimul_CA2propCubeInt()</a> to compute 3D intensity cube </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">iprop00</td><td>3D intensity image</td></tr>
+  </table>
+  </dd>
+</dl>
+<h3>Compute image that has the min along z of OAincohc at each x,y</h3>
+<p>Function <a class="el" href="PIAACMCsimul__exec_8c.html#a38947f5e94b769f24e12f080548252d5" title="Make Lyot stops using off-axis light minimums. ">PIAACMCsimul_optimizeLyotStop_OAmin()</a> computes minimal intensity image.</p>
+<h3>Optimize Lyot stops</h3>
+<p>The actual Lyot stop shape and location optimization is done by <a class="el" href="PIAACMCsimul_8h.html#a7dda471518af5b254f0fecef2e9e01aa" title="Lyot stops positions from zmin to zmax relative to current, working back (light goes from 0 to zmax) ...">PIAACMCsimul_optimizeLyotStop()</a>, producing optimal Lyot stops in optLM*.fits and position relative to elem0 in piaacmc[0].LyotStop_zpos</p>
+<hr/>
+<h2>Mode 11: Setup multizone ring mask and Compute polychromatic response to zones, store result in FPMresp</h2>
+<p>here we compute how the light propagates from each individual mask zone to the focal plane (where each mask zone is completely tranparent)</p>
+<hr/>
+<h2>Mode 13: Optimize focal plane mask zones only</h2>
+<p>Uses "fast" mode:</p>
+<p>After mode 11, we can use the (complex) light propagated from each zone to compute the impact of any thickness (sag) of that zone: the zone thickness induces a phase rotation for that zone, which is applied to the unobstructed light from that zone as a complex rotation.</p>
+<p>The search is via steepest descent from random starting points.</p>
+<p>This mode only sets up the optimization that actually happens after exiting the switch statement if LINOPT = 1 (as does mode 40)</p>
+<hr/>
+<h2>Mode 40: Optimize PIAA optics shapes (and focal plane mask transmission for idealized PIAACMC)</h2>
 <p>compute contrast curve</p>
-<p>compute contrast curve measure average contrast value, 2-6 lambda/D </p>
+<p>compute contrast curve measure average contrast value, 2-6 lambda/D</p>
+<hr/>
+<h2>Mode 101: Measure transmission as a function of angular separation</h2>
+<hr/>
+<h2>Mode 300: Import FPM configuration setting from parent directory</h2>
 
 </div>
 </div>
@@ -906,6 +1023,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Make PIAA OPD screens from radial sag profile. </p>
+
 </div>
 </div>
 <a class="anchor" id="a7dda471518af5b254f0fecef2e9e01aa"></a>
@@ -967,13 +1086,22 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Lyot stops positions from zmin to zmax relative to current, working back (light goes from 0 to zmax) </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Lyot stops positions from zmin to zmax relative to current, working back (light goes from 0 to zmax) </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">FluxTOT</td><td>total flux in current plane </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">FluxLim</td><td>max flux allowed from star </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">IDamp_name</td><td>image : 2D amplitude </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">IDpha_name</td><td>image : 2D phase </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">IDincohc_name</td><td>image : 3D incoherent intensity </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zmin</td><td>float : minimum propagation value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zmax</td><td>float : maximum propagation value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">throughput</td><td>double: Geometric throughput of Lyot stop(s) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">NBz</td><td>long : Number of discrete propagation planes between zmin and zmax </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">NBmasks</td><td>long : Number of Lyot stop(s) </td></tr>
   </table>
   </dd>
 </dl>
+<p>call <a class="el" href="PIAACMCsimul_8h.html#a98061bcad9f81a791a0317d47f564736">PIAACMCsimul_mkLyotMask()</a> </p>
 
 </div>
 </div>
@@ -1315,7 +1443,7 @@ List of Configuration Parameters</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a43bbe342066ce7b2de1328729e4bb5e.html">PIAACMCsimul</a></li><li class="navelem"><a class="el" href="PIAACMCsimul_8h.html">PIAACMCsimul.h</a></li>
-    <li class="footer">Generated on Thu Nov 23 2017 11:41:55 for coffee by
+    <li class="footer">Generated on Thu Nov 23 2017 23:49:39 for coffee by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

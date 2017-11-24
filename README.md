@@ -1,7 +1,7 @@
  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 
-# coffee : Coronagraph design
+# Coronagraph Optimization For Fast Exoplanet Exploration (coffee)
 
 ## Overview
 
@@ -11,7 +11,7 @@ Written in C, optimized for performance.
 
 Executable launches a command line interface (CLI). Type "help" in the CLI to get started.
 
-coffee uses the [MILK package](https://github.com/milk-org/MILK)
+coffee uses [milk](https://github.com/milk-org/milk)
 
 
 ## Downloading and installing 
