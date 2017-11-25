@@ -1,3 +1,5 @@
+html/
+.gitignore
 README.txt
 *~
 *.o
