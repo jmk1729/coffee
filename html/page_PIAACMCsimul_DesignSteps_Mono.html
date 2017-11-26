@@ -111,6 +111,8 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_DesignSteps_Mono.htm
 <li>design an idealized monochromatic PIAACMC for a centrally obscured aperture (steps 1-4)</li>
 <li>modify the design for the pupil aperture (steps 5-)</li>
 </ul>
+<hr/>
+ <hr/>
 <h2>STEP 000 (MODE=0): Create an idealized centrally obscured apodized PIAACMC monochromatic design</h2>
 <p>This is meant as a starting point for the PIAACMC, which will then be optimized further. This step takes a few minutes, and upon normal completion, display:</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;./runPIAACMC REACHED STATE EXIT POINT (1)</div>
@@ -121,9 +123,11 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_DesignSteps_Mono.htm
 <tr>
 <th>Output file </th><th>Description  </th></tr>
 <tr>
-<td>Cmodes_1024.fits </td><td>Cosine modes applied for PIAA optics shapes optimization </td></tr>
+<td>ref/Cmodes_1024.fits </td><td>Cosine modes applied for PIAA optics shapes optimization </td></tr>
 <tr>
-<td>Fmodes_1024.fits </td><td>Fourier modes applied for PIAA optics shapes optimization </td></tr>
+<td>ref/Fmodes_1024.fits </td><td>Fourier modes applied for PIAA optics shapes optimization </td></tr>
+<tr>
+<td>piaacmcconf_i000/APLCapo.&lt;X&gt;.&lt;Y&gt;.info </td><td>Apodization function info </td></tr>
 <tr>
 <td>piaacmcconf_i000/WFamp0_xxx.fits </td><td>Amplitude in plane xxx </td></tr>
 <tr>
@@ -133,13 +137,15 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_DesignSteps_Mono.htm
 <tr>
 <td>piaacmcconf_i000/apo2Drad.fits </td><td>Amplitude apodization (entirely allocated to PIAA optics) </td></tr>
 <tr>
-<td>piaacmcconf_i000/PIAA_Mshapes.txt </td><td>aspheric optics shapes (r0 z0 r1 z1), unit [m] </td></tr>
+<td>piaacmcconf_i000/PIAA_Mshapes.txt </td><td>Aspheric optics shapes (r0 z0 r1 z1), unit [m] </td></tr>
 <tr>
-<td>piaacmcconf_i000/piaam0z.fits </td><td>first PIAA mirror sag [m] </td></tr>
+<td>piaacmcconf_i000/piaam0z.fits </td><td>First PIAA mirror sag [m] </td></tr>
 <tr>
-<td>piaacmcconf_i000/piaam1z.fits </td><td>second PIAA mirror sag [m] </td></tr>
+<td>piaacmcconf_i000/piaam1z.fits </td><td>Second PIAA mirror sag [m] </td></tr>
 <tr>
 <td>piaacmcconf_i000/psfi0_step000.fits </td><td>Coronagraphic PSF (flux normalized to total=1 without coronagraph) </td></tr>
+<tr>
+<td>log/varlog.txt </td><td>List of coronagraph parameters </td></tr>
 </table>
 <p>The conjugations.txt file should contain number, location and description of each plane:</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;00  0.000000    input pupil</div>
@@ -154,142 +160,213 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_DesignSteps_Mono.htm
 </div><!-- fragment --><p>The complex amplitude for each of these planes (files WFamp0_xxx.fits) should show the pupil apodization and coronagraphic effect induced by the focal plane mask which moves light into the central obstruction.</p>
 <p><a href="../src/PIAACMCsimul/doc/figures/examplePIAA_step0_WFamp.png">Amplitude in each of the 9 planes</a></p>
 <p>The script provides some approximate performance metrics upon normal exit:</p>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;saved -&gt; test_psfc0a.fits</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;TOTAL = 0.002426</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    FLUX   0    114332.0000 1.000000</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    FLUX   1    114332.0000 1.000000</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    FLUX   2    114331.9875 1.000000</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    FLUX   3    114331.9736 1.000000</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    FLUX   4    114331.9445 1.000000</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    FLUX   5    114331.8632 0.999999</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    FLUX   6     36330.5968 0.317764</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    FLUX   7       552.3991 0.004832</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    FLUX   8        95.3810 0.000834</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    FLUX   2    114331.9872 1.000000</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    FLUX   3    114331.9668 1.000000</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    FLUX   4    114331.9357 0.999999</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    FLUX   5    114331.8634 0.999999</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    FLUX   6     23794.1440 0.208114</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    FLUX   7       551.2827 0.004822</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    FLUX   8       277.3360 0.002426</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;COMPUTING UNRESOLVED SOURCE PSF -*- [0.000000 x 0.000000]</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;Peak constrast (rough estimate)= 3617.04 -&gt; 2.76706e-07</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;optsyst[0].flux[0]  = 114332</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;SCORINGMASKTYPE = 0</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;[0] Total light in scoring field = 1.32039e+06, peak PSF = -1, SCOTINGTOTAL = 2436   -&gt; Average contrast = 4.14658e-08</div>
-</div><!-- fragment --><h2>STEP 001: Propagate solution and compute PSF</h2>
-<p>The previous solution is propagated. This should yield the same result as step 0. This should take approximately 1mn.</p>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;    FLUX   0    114332.0000 1.000000</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    FLUX   1    114332.0000 1.000000</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    FLUX   2    114331.9848 1.000000</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    FLUX   3    114331.9558 1.000000</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    FLUX   4    114331.9316 0.999999</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    FLUX   5     36329.5003 0.317754</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    FLUX   6       542.4649 0.004745</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    FLUX   7        96.0420 0.000840</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;COMPUTING UNRESOLVED SOURCE PSF -*- [0.000000 x 0.000000]</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;Peak constrast (rough estimate)= 3025.69 -&gt; 2.31467e-07</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;optsyst[0].flux[0]  = 114332</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;SCORINGMASKTYPE = 0</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;[0] Total light in scoring field = 1.3261e+06, peak PSF = -1, SCOTINGTOTAL = 2436   -&gt; Average contrast = 4.1645e-08</div>
-</div><!-- fragment --><h2>STEP 002: Specify input pupil geometry</h2>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;SCORINGTOTAL = 2436.000000  2436.000000</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;Peak constrast (rough estimate)= 26231.4 -&gt; 2.00672e-06</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;optsyst[0].flux[0]  = 114332</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;SCORINGMASKTYPE = 0</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;[0] Total light in scoring field = 8.58033e+06, peak PSF = -1, SCOTINGTOTAL = 2436   -&gt; Average contrast = 2.69458e-07</div>
+</div><!-- fragment --><p>Runtime 00:01:36 (size 1024)</p>
+<hr/>
+<h2>STEP 001: Propagate solution and compute PSF</h2>
+<p>The previous solution is propagated. This should yield the same result as step 0.</p>
+<table class="doxtable">
+<tr>
+<th>Output file </th><th>Description  </th></tr>
+<tr>
+<td>piaacmcconf_i000/WFamp0_xxx.fits </td><td>Amplitude in plane xxx </td></tr>
+<tr>
+<td>piaacmcconf_i000/WFpha0_xxx.fits </td><td>Phase in plane xxx </td></tr>
+<tr>
+<td>piaacmcconf_i000/psfi0_step001.fits </td><td>On-axis PSF </td></tr>
+</table>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;TOTAL = 0.002387</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    FLUX   0    114332.0000 1.000000</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    FLUX   1    114332.0000 1.000000</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    FLUX   2    114331.9872 1.000000</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    FLUX   3    114331.9668 1.000000</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    FLUX   4    114331.9356 0.999999</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    FLUX   5    114331.9105 0.999999</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    FLUX   6     23785.0351 0.208035</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    FLUX   7       544.8861 0.004766</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    FLUX   8       272.9253 0.002387</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;COMPUTING UNRESOLVED SOURCE PSF -*- [0.000000 x 0.000000]</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;SCORINGTOTAL = 2436.000000  2436.000000</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;Peak constrast (rough estimate)= 25740.7 -&gt; 1.96918e-06</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;optsyst[0].flux[0]  = 114332</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;SCORINGMASKTYPE = 0</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;[0] Total light in scoring field = 8.18737e+06, peak PSF = -1, SCOTINGTOTAL = 2436   -&gt; Average contrast = 2.57118e-07</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;saving contrast value [2.57118e-07] -&gt; piaacmcconf_i000/contrast_ptsrc_sm0_s0_l0565_sr10_nbr001_mr000_minsag-10000_maxsag010000_fpmreg001000_ssr00_ssm0_Mirror_wb01.txt</div>
+</div><!-- fragment --><p>Runtime 00:00:07 </p><hr/>
+<h2>STEP 002: Specify input pupil geometry</h2>
 <p>The pupil geometry is copied to file <code>piaacmcconf_i000/pupa0_1024.fits</code></p>
+<p>Runtime 00:00:00 (size 1024) </p><hr/>
 <h2>STEP 003 (mode = 0): compute on-axis PSF for new pupil geometry</h2>
-<p>Same as step 1, but taking into account the pupil geometry. With spiders or gaps in the pupil, the contrast will not be as good</p>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;    FLUX   0    416183.9306 1.000000</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    FLUX   1    416183.9306 1.000000</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    FLUX   2    416183.8669 1.000000</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    FLUX   3    416183.7614 1.000000</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    FLUX   4    416183.7012 0.999999</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    FLUX   5    155983.4386 0.374794</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    FLUX   6     32825.0378 0.078871</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    FLUX   7     30509.7138 0.073308</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;COMPUTING UNRESOLVED SOURCE PSF -*- [0.000000 x 0.000000]</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;Peak constrast (rough estimate)= 2.74249e+07 -&gt; 0.000158334</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;optsyst[0].flux[0]  = 416184</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;SCORINGMASKTYPE = 0</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;[0] Total light in scoring field = 7.35517e+09, peak PSF = -1, SCOTINGTOTAL = 2436   -&gt; Average contrast = 1.74319e-05</div>
-</div><!-- fragment --><p>This step should take approximately 1mn.</p>
+<p>Same as step 1, but taking into account the pupil geometry. With spiders or gaps in the pupil, the contrast will not be as good.</p>
+<table class="doxtable">
+<tr>
+<th>Output file </th><th>Description  </th></tr>
+<tr>
+<td>piaacmcconf_i000/WFamp0_xxx.fits </td><td>Amplitude in plane xxx </td></tr>
+<tr>
+<td>piaacmcconf_i000/WFpha0_xxx.fits </td><td>Phase in plane xxx </td></tr>
+<tr>
+<td>piaacmcconf_i000/psfi0_step003.fits </td><td>On-axis PSF </td></tr>
+</table>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;TOTAL = 0.140551</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    FLUX   0    103004.0000 1.000000</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    FLUX   1    103004.0000 1.000000</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    FLUX   2    103003.9828 1.000000</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    FLUX   3    103003.9639 1.000000</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    FLUX   4    103003.9359 0.999999</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    FLUX   5    103003.6175 0.999996</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    FLUX   6     27580.8543 0.267765</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    FLUX   7     15763.2885 0.153036</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    FLUX   8     14477.3372 0.140551</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;COMPUTING UNRESOLVED SOURCE PSF -*- [0.000000 x 0.000000]</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;SCORINGTOTAL = 2436.000000  2436.000000</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;Peak constrast (rough estimate)= 4.65338e+07 -&gt; 0.00438592</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;optsyst[0].flux[0]  = 103004</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;SCORINGMASKTYPE = 0</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;[0] Total light in scoring field = 3.77881e+09, peak PSF = -1, SCOTINGTOTAL = 2436   -&gt; Average contrast = 0.000146207</div>
+</div><!-- fragment --><p>Runtime 00:00:07 (size 1024) </p><hr/>
 <h2>STEP 004 (mode = 5): Compute Lyot stops shapes and locations, 1st pass</h2>
 <p>For circular centrally obscured pupils, the default Lyot stops configuration consists of two stops: one that masks the outer part of the beam, and one that masks the central obstruction.</p>
 <p>Fine optimization of the stops locations is done with a separate command. The optional lsoptrange value is the range (unit: m) for the mask position search.</p>
 <p>When the optimization completes, the best solutions are listed:</p>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;BEST SOLUTION: 0.000000000000 / 33.478288243056    0.000000556868 / 0.000044544711  -&gt; 0.706241153417  0.019795686221</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;BEST SOLUTION: 6.695657648611 / 33.478288243056    0.000000556868 / 0.000044544711  -&gt; 0.706237596354  0.019795151562</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;BEST SOLUTION: 7.365223413472 / 33.478288243056    0.000000556868 / 0.000044544711  -&gt; 0.706219734865  0.019792653140</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;BEST SOLUTION: 8.034789178333 / 33.478288243056    0.000000556868 / 0.000044544711  -&gt; 0.706026161578  0.019768034052</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;BEST SOLUTION: 8.704354943194 / 33.478288243056    0.000000556868 / 0.000044544711  -&gt; 0.705220276320  0.019673042636</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;BEST SOLUTION: 9.373920708056 / 33.478288243056    0.000000556868 / 0.000044544711  -&gt; 0.702039509211  0.019321456405</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;BEST SOLUTION: 32.808722478194 / 33.478288243056    0.000000668241 / 0.000044544711  -&gt; 0.733651721375  0.019318291526</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;BEST SOLUTION: 33.478288243056 / 33.478288243056    0.000000668241 / 0.000044544711  -&gt; 0.710514365016  0.018620791690</div>
-</div><!-- fragment --><p>The optimal Lyot stop(s) conjugation(s) is written in file <code>piaacmcparams_step004.conf</code></p>
-<p>This step takes about 2hr.</p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;BEST SOLUTION: 5.646381230377 / 12.274741805168    0.000000942068 / 0.000021030879  -&gt; 0.700625751251  0.039432599420</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;BEST SOLUTION: 5.891876066481 / 12.274741805168    0.000000942068 / 0.000021030879  -&gt; 0.700355617330  0.039385771373</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;BEST SOLUTION: 8.837814099721 / 12.274741805168    0.000001130481 / 0.000021030879  -&gt; 0.721432709799  0.039346632150</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;BEST SOLUTION: 9.083308935825 / 12.274741805168    0.000001130481 / 0.000021030879  -&gt; 0.716777237262  0.038827027960</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;BEST SOLUTION: 9.328803771928 / 12.274741805168    0.000001130481 / 0.000021030879  -&gt; 0.712835211313  0.038398704677</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;BEST SOLUTION: 9.574298608031 / 12.274741805168    0.000001130481 / 0.000021030879  -&gt; 0.708858067020  0.037977986529</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;BEST SOLUTION: 9.819793444135 / 12.274741805168    0.000001130481 / 0.000021030879  -&gt; 0.705292934047  0.037609975658</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;BEST SOLUTION: 10.065288280238 / 12.274741805168    0.000001130481 / 0.000021030879  -&gt; 0.701842146347  0.037262905586</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;BEST SOLUTION: 11.292762460755 / 12.274741805168    0.000001356577 / 0.000021030879  -&gt; 0.703163640577  0.036896957877</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;BEST SOLUTION: 12.029246969065 / 12.274741805168    0.000001627893 / 0.000021030879  -&gt; 0.701096376349  0.036559137596</div>
+</div><!-- fragment --><p>The optimal Lyot stop(s) conjugation(s) is written in file <code>piaacmcconf_i000/piaacmcparams_step004.conf</code></p>
+<p>Runtime 00:53:49 (size 1024) </p><hr/>
 <h2>STEP 005 (mode = 2): Optimize focal plane mask transmission, 1st pass</h2>
-<p>See source code in <a class="el" href="PIAACMCsimul_8h.html#a0b00332b096e51006fb9240491faf744" title="Main simulation routine. ">PIAACMCsimul_exec()</a></p>
-<p>Optimizes the focal plane mask transmission. Results are written in file <code>result_fpmt.log</code></p>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;0.031579 1.35944e-05  0 0.3 0.1</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;0.131579 7.96891e-06  0 0.3 0.1</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;0.231579 3.83775e-06  0 0.3 0.1</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;0.331579 1.20092e-06  0 0.3 0.1</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;0.431579 5.84203e-08  0 0.3 0.1</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;0.531579 4.10247e-07  0 0.3 0.1</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;0.631579 2.2564e-06  0 0.3 0.1</div>
+<p>See source code in <a class="el" href="PIAACMCsimul_8h.html#a6c9ce07671f0ea5bf5e4865847efa07f">PIAACMCsimul_exec_optimize_fpmtransmission()</a></p>
+<p>Optimizes the focal plane mask transmission. Results are written in file <code>piaacmcconf_i000/result_fpmt.log</code></p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;-0.05940301  3.24056e-05         0          0.3          0.1</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;+0.04059699  1.92755e-05         0          0.3          0.1</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;+0.14059699  9.55978e-06         0          0.3          0.1</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;+0.24059699  3.25834e-06         0          0.3          0.1</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;+0.34059699  3.71207e-07         0          0.3          0.1</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;+0.44059699  8.98387e-07         0          0.3          0.1</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;+0.54059699  4.83988e-06         0          0.3          0.1</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;0.341579 1.01943e-06  1 0.09 0.03</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;0.371579 5.64602e-07  1 0.09 0.03</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;0.401579 2.44266e-07  1 0.09 0.03</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;0.431579 5.84203e-08  1 0.09 0.03</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;0.461579 7.06368e-09  1 0.09 0.03</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;0.491579 9.01969e-08  1 0.09 0.03</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;0.521579 3.0782e-07  1 0.09 0.03</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;+0.25059699  2.81598e-06         1         0.09         0.03</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;+0.28059699  1.69377e-06         1         0.09         0.03</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;+0.31059699  8.78845e-07         1         0.09         0.03</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;+0.34059699  3.71207e-07         1         0.09         0.03</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;+0.37059699  1.70859e-07         1         0.09         0.03</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;+0.40059699  2.77799e-07         1         0.09         0.03</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;+0.43059699  6.92026e-07         1         0.09         0.03</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;0.434579 4.72326e-08  2 0.027 0.009</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;0.443579 2.1739e-08  2 0.027 0.009</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;0.452579 8.34926e-09  2 0.027 0.009</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;0.461579 7.06368e-09  2 0.027 0.009</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;0.470579 1.78822e-08  2 0.027 0.009</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;0.479579 4.08046e-08  2 0.027 0.009</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;0.488579 7.58315e-08  2 0.027 0.009</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;+0.34359699  3.37345e-07         2        0.027        0.009</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;+0.35259699  2.54193e-07         2        0.027        0.009</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;+0.36159699  1.98699e-07         2        0.027        0.009</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;+0.37059699  1.70859e-07         2        0.027        0.009</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;+0.37959699  1.70676e-07         2        0.027        0.009</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;+0.38859699  1.98148e-07         2        0.027        0.009</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;+0.39759699  2.53276e-07         2        0.027        0.009</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;0.453479 7.676e-09  3 0.0081 0.0027</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;0.456179 6.38254e-09  3 0.0081 0.0027</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;0.458879 6.17844e-09  3 0.0081 0.0027</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;0.461579 7.06368e-09  3 0.0081 0.0027</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;0.464279 9.03836e-09  3 0.0081 0.0027</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;0.466979 1.21023e-08  3 0.0081 0.0027</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;0.469679 1.62556e-08  3 0.0081 0.0027</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;+0.37149699  1.69596e-07         3       0.0081       0.0027</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;+0.37419699  1.67467e-07         3       0.0081       0.0027</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;+0.37689699  1.67827e-07         3       0.0081       0.0027</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;+0.37959699  1.70676e-07         3       0.0081       0.0027</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;+0.38229699  1.76014e-07         3       0.0081       0.0027</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;+0.38499699  1.83841e-07         3       0.0081       0.0027</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;+0.38769699  1.94156e-07         3       0.0081       0.0027</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;0.456449 6.31312e-09  4 0.00243 0.00081</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;0.457259 6.17018e-09  4 0.00243 0.00081</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;0.458069 6.12529e-09  4 0.00243 0.00081</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;0.458879 6.17844e-09  4 0.00243 0.00081</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;0.459689 6.32964e-09  4 0.00243 0.00081</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;0.460499 6.57888e-09  4 0.00243 0.00081</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;0.461309 6.92612e-09  4 0.00243 0.00081</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;+0.37176699  1.69271e-07         4      0.00243      0.00081</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;+0.37257699  1.68446e-07         4      0.00243      0.00081</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;+0.37338699  1.67844e-07         4      0.00243      0.00081</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;+0.37419699  1.67467e-07         4      0.00243      0.00081</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;+0.37500699  1.67314e-07         4      0.00243      0.00081</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;+0.37581699  1.67384e-07         4      0.00243      0.00081</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;+0.37662699  1.67679e-07         4      0.00243      0.00081</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;0.457340 6.16129e-09  5 0.000729 0.000243</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;0.457583 6.14047e-09  5 0.000729 0.000243</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;0.457826 6.12846e-09  5 0.000729 0.000243</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;0.458069 6.12529e-09  5 0.000729 0.000243</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;0.458312 6.13094e-09  5 0.000729 0.000243</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;0.458555 6.14542e-09  5 0.000729 0.000243</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;0.458798 6.16872e-09  5 0.000729 0.000243</div>
-</div><!-- fragment --><p>This takes about 30mn</p>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;+0.37427799  1.67442e-07         5     0.000729     0.000243</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;+0.37452099  1.67379e-07         5     0.000729     0.000243</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;+0.37476399  1.67336e-07         5     0.000729     0.000243</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;+0.37500699  1.67314e-07         5     0.000729     0.000243</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;+0.37524999  1.67311e-07         5     0.000729     0.000243</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;+0.37549299  1.67329e-07         5     0.000729     0.000243</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;+0.37573599  1.67367e-07         5     0.000729     0.000243</div>
+</div><!-- fragment --><p>Runtime 00:03:56 (size 1024)</p>
+<hr/>
 <h2>STEP 006 (mode = 5): Compute Lyot stops shapes and locations, 2nd pass, 70% throughput</h2>
-<p>Takes about 10mn</p>
+<p>Source code:</p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;BEST SOLUTION: 30.006465758591 / 50.010776264318    0.000000319995 / 0.000021330725  -&gt; 0.602147984170  0.001772430096</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;BEST SOLUTION: 31.006681283877 / 50.010776264318    0.000000319995 / 0.000021330725  -&gt; 0.601618355971  0.001755040537</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;BEST SOLUTION: 32.006896809163 / 50.010776264318    0.000000319995 / 0.000021330725  -&gt; 0.601141999997  0.001739932914</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;BEST SOLUTION: 33.007112334450 / 50.010776264318    0.000000319995 / 0.000021330725  -&gt; 0.600760087273  0.001728177742</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;BEST SOLUTION: 34.007327859736 / 50.010776264318    0.000000319995 / 0.000021330725  -&gt; 0.600397821167  0.001717338698</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;BEST SOLUTION: 44.009483112599 / 50.010776264318    0.000000383994 / 0.000021330725  -&gt; 0.602141259615  0.001712595775</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;BEST SOLUTION: 45.009698637886 / 50.010776264318    0.000000383994 / 0.000021330725  -&gt; 0.601238947002  0.001692309270</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;BEST SOLUTION: 46.009914163172 / 50.010776264318    0.000000383994 / 0.000021330725  -&gt; 0.600243611414  0.001670430013</div>
+</div><!-- fragment --><p>Runtime 00:02:50 (size 1024)</p>
+<hr/>
 <h2>STEP 007 (mode = 40): Tune PIAA shapes and focal plane mask transm, 10 cosine modes, 5 Fourier modes</h2>
-<p>This takes approximately 20mn for size = 1024.</p>
 <p>Progress can be tracked by watching file :</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;tail -f linoptval.txt</div>
-</div><!-- fragment --><h2>STEP 008 (mode = 40): Tune PIAA shapes and focal plane mask transm, 20 cosine modes, 20 Fourier modes</h2>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;    FLUX   0    416183.9306 1.000000</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    FLUX   1    416183.9306 1.000000</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    FLUX   2    416183.8669 1.000000</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    FLUX   3    416183.7608 1.000000</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    FLUX   4    416183.6991 0.999999</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    FLUX   5    189642.2892 0.455669</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    FLUX   6       216.7150 0.000521</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    FLUX   7       216.7150 0.000521</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;COMPUTING UNRESOLVED SOURCE PSF -*- [0.000000 x 0.000000]</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;Peak constrast (rough estimate)= 6272.06 -&gt; 3.62109e-08</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;optsyst[0].flux[0]  = 416184</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;SCORINGMASKTYPE = 0</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;[0] Total light in scoring field = 291196, peak PSF = -1, SCOTINGTOTAL = 2436   -&gt; Average contrast = 6.90139e-10</div>
-</div><!-- fragment --><p>This step takes 3 hr</p>
+</div><!-- fragment --><p>The file shows contrast value improving. Lines starting with '##' are evaluations along lines of steepest gradient, and lines starting with <code>###</code> are evaluations of local derivatives.</p>
+<p>Last lines of file <code>linoptval.txt</code>:</p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;##  1.000               0.123419                    2.12854e-08    (reg =            1            1   contrast =          2.12854e-08)       [0] [31] bestval =  2.12103e-08</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;##  1.000               0.149303                    2.12684e-08    (reg =            1            1   contrast =          2.12684e-08)       [0] [31] bestval =  2.12103e-08</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;##  1.000               0.180363                    2.12484e-08    (reg =            1            1   contrast =          2.12484e-08)       [0] [31] bestval =  2.12103e-08</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;##  1.000               0.217636                    2.12264e-08    (reg =            1            1   contrast =          2.12264e-08)       [0] [31] bestval =  2.12103e-08</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;##  1.000               0.262363                    2.12032e-08    (reg =            1            1   contrast =          2.12032e-08)       [0] [31]  -&gt; BEST VECTOR =======</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;##  1.000               0.316036                    2.11772e-08    (reg =            1            1   contrast =          2.11772e-08)       [0] [31]  -&gt; BEST VECTOR =======</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;##  1.000               0.380443                    2.11525e-08    (reg =            1            1   contrast =          2.11525e-08)       [0] [31]  -&gt; BEST VECTOR =======</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;##  1.000               0.457732                    2.11278e-08    (reg =            1            1   contrast =          2.11278e-08)       [0] [31]  -&gt; BEST VECTOR =======</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;##  1.000               0.550478                    2.11099e-08    (reg =            1            1   contrast =          2.11099e-08)       [0] [31]  -&gt; BEST VECTOR =======</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;##  1.000               0.661774                    2.11015e-08    (reg =            1            1   contrast =          2.11015e-08)       [0] [31]  -&gt; BEST VECTOR =======</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;##  1.000               0.795329                     2.1113e-08    (reg =            1            1   contrast =           2.1113e-08)       [0] [31] bestval =  2.11015e-08</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;-&gt;     9             2.11015e-08 &lt;-          2.14234e-07 </div>
+</div><!-- fragment --><p>Runtime 01:30:31 (size 1024)</p>
+<hr/>
+<h2>STEP 008 (mode = 40): Tune PIAA shapes and focal plane mask transm, 20 cosine modes, 20 Fourier modes</h2>
+<p>Progress can be tracked by watching file :</p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;tail -f linoptval.txt</div>
+</div><!-- fragment --><p>Last lines of file <code>linoptval.txt</code>:</p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;### scanning gain </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;### &lt;alphareg&gt;  &lt;gain&gt;  &lt;contrast&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;##  0.000               0.001000                    6.45963e-09    (reg =            1            1   contrast =          6.45963e-09)       [0] [81] ===== START POINT =====</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;##  0.000               0.002400                    6.45963e-09    (reg =            1            1   contrast =          6.45963e-09)       [0] [81] bestval =  6.45963e-09</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;##  0.200               0.001000                    6.45965e-09    (reg =            1            1   contrast =          6.45965e-09)       [0] [81] bestval =  6.45963e-09</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;##  0.200               0.002400                    6.45968e-09    (reg =            1            1   contrast =          6.45968e-09)       [0] [81] bestval =  6.45963e-09</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;##  0.400               0.001000                    6.45972e-09    (reg =            1            1   contrast =          6.45972e-09)       [0] [81] bestval =  6.45963e-09</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;##  0.400               0.002400                    6.45991e-09    (reg =            1            1   contrast =          6.45991e-09)       [0] [81] bestval =  6.45963e-09</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;##  0.600               0.001000                    6.45944e-09    (reg =            1            1   contrast =          6.45944e-09)       [0] [81]  -&gt; BEST VECTOR =======</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;##  0.600               0.002400                    6.45992e-09    (reg =            1            1   contrast =          6.45992e-09)       [0] [81] bestval =  6.45944e-09</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;##  0.800               0.001000                    6.45954e-09    (reg =            1            1   contrast =          6.45954e-09)       [0] [81] bestval =  6.45944e-09</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;##  0.800               0.002400                    6.45906e-09    (reg =            1            1   contrast =          6.45906e-09)       [0] [81]  -&gt; BEST VECTOR =======</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;##  0.800               0.004080                    6.45901e-09    (reg =            1            1   contrast =          6.45901e-09)       [0] [81]  -&gt; BEST VECTOR =======</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;##  0.800               0.006096                    6.45865e-09    (reg =            1            1   contrast =          6.45865e-09)       [0] [81]  -&gt; BEST VECTOR =======</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;##  0.800               0.008515                    6.45912e-09    (reg =            1            1   contrast =          6.45912e-09)       [0] [81] bestval =  6.45865e-09</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;##  1.000               0.001000                    6.45904e-09    (reg =            1            1   contrast =          6.45904e-09)       [0] [81] bestval =  6.45865e-09</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;##  1.000               0.002400                    6.45889e-09    (reg =            1            1   contrast =          6.45889e-09)       [0] [81] bestval =  6.45865e-09</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;##  1.000               0.004080                    6.45891e-09    (reg =            1            1   contrast =          6.45891e-09)       [0] [81] bestval =  6.45865e-09</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;-&gt;     3             6.45865e-09 &lt;-          2.11015e-08 </div>
+</div><!-- fragment --><p>Runtime 00:34:00 (size 1024)</p>
+<hr/>
 <h2>STEP 009 (mode = 5): Compute Lyot stops shapes and locations, 2nd pass, 70% throughput</h2>
 <p>This step takes approximately 4mn.</p>
+<hr/>
 <h2>STEP 010 (mode = 1): Tune Lyot stops conjugations</h2>
 <p>To view result:</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;tail -f result_LMpos.log</div>
@@ -307,6 +384,7 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_DesignSteps_Mono.htm
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;SCORINGMASKTYPE = 0</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;[0] Total light in scoring field = 298404, peak PSF = -1, SCOTINGTOTAL = 2436   -&gt; Average contrast = 7.07224e-10</div>
 </div><!-- fragment --><p>This step takes approximately 5mn.</p>
+<hr/>
 <h2>STEP 011 (mode = 40): Tune PIAA shapes and focal plane mask transm, 20 cosine modes, 20 Fourier modes</h2>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;    FLUX   0    416183.9306 1.000000</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    FLUX   1    416183.9306 1.000000</div>
@@ -380,7 +458,7 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_DesignSteps_Mono.htm
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Nov 23 2017 23:49:39 for coffee by
+    <li class="footer">Generated on Sun Nov 26 2017 12:33:55 for coffee by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

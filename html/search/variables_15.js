@@ -9,5 +9,5 @@ var searchData=
   ['var',['var',['../structsymrec.html#af3db0c7e569f93a9d7385d5b170578f8',1,'symrec']]],
   ['variable',['variable',['../structDATA.html#a38336f0ef793c2aef2a6f3a20e3e361b',1,'DATA']]],
   ['verbose',['Verbose',['../CLIcore_8c.html#a95f627d7054b1abbffa2c6ea19bf05db',1,'CLIcore.c']]],
-  ['vsize',['vsize',['../structPIAACMCsimul__var.html#a72b9da0db59ba2ac1551abf9ba81e16b',1,'PIAACMCsimul_var']]]
+  ['vsize',['vsize',['../structPIAACMCsimul__varType.html#a3aceb7dda79725c620ba9bd50059957e',1,'PIAACMCsimul_varType']]]
 ];

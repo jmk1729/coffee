@@ -10,5 +10,5 @@ var searchData=
   ['variable',['VARIABLE',['../structVARIABLE.html',1,'VARIABLE'],['../structDATA.html#a38336f0ef793c2aef2a6f3a20e3e361b',1,'DATA::variable()']]],
   ['variable_5fid',['variable_ID',['../COREMOD__memory_8c.html#a6c8a58000943870cafcc9e4c9665bab5',1,'variable_ID(const char *name):&#160;COREMOD_memory.c'],['../COREMOD__memory_8h.html#a6c8a58000943870cafcc9e4c9665bab5',1,'variable_ID(const char *name):&#160;COREMOD_memory.c']]],
   ['verbose',['Verbose',['../CLIcore_8c.html#a95f627d7054b1abbffa2c6ea19bf05db',1,'CLIcore.c']]],
-  ['vsize',['vsize',['../structPIAACMCsimul__var.html#a72b9da0db59ba2ac1551abf9ba81e16b',1,'PIAACMCsimul_var']]]
+  ['vsize',['vsize',['../structPIAACMCsimul__varType.html#a3aceb7dda79725c620ba9bd50059957e',1,'PIAACMCsimul_varType']]]
 ];

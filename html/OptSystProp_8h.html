@@ -135,6 +135,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a57447b62915b0ccfcb16276c92e7ffe2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OptSystProp_8h.html#a57447b62915b0ccfcb16276c92e7ffe2">OptSystProp_propagateCube</a> (<a class="el" href="structOPTSYST.html">OPTSYST</a> *<a class="el" href="PIAACMCsimul__run_8c.html#afd320a44eac81011bd37a9d649950587">optsyst</a>, long index, const char *IDin_amp_name, const char *IDin_pha_name, const char *IDout_amp_name, const char *IDout_pha_name, double zprop, int sharedmem)</td></tr>
 <tr class="separator:a57447b62915b0ccfcb16276c92e7ffe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a88f918cdbc5abff31130c01dde8e1a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OptSystProp_8h.html#a2a88f918cdbc5abff31130c01dde8e1a">OptSystProp_run</a> (<a class="el" href="structOPTSYST.html">OPTSYST</a> *<a class="el" href="PIAACMCsimul__run_8c.html#afd320a44eac81011bd37a9d649950587">optsyst</a>, long index, long elemstart, long elemend, const char *savedir, int sharedmem)</td></tr>
+<tr class="memdesc:a2a88f918cdbc5abff31130c01dde8e1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optical propagation execution.  <a href="#a2a88f918cdbc5abff31130c01dde8e1a">More...</a><br /></td></tr>
 <tr class="separator:a2a88f918cdbc5abff31130c01dde8e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -262,6 +263,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Optical propagation execution. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>system index (usually 0) </td></tr>
@@ -272,8 +275,14 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>*optsyst.elemkeepmem 1 if element complex amplitude should be kept in memory after use </p>
-<p>discard element memory after used </p>
+<p>optsyst.elemkeepmem 1 if element complex amplitude should be kept in memory after use </p>
+<p>discard element memory after used</p>
+<p>If not subsampled :</p>
+<ul>
+<li>do DFT from pupil to pupil with a FPM in the middle, so this does pupil1 -&gt; DFT -&gt; FPM -&gt; DFT -&gt; pupil2</li>
+<li>output in last argument</li>
+<li>the focal plane mask is the second argument, which contains properties of the FPM that are applied as part of <a class="el" href="fft_8c.html#a1afebd5e0629d3e6023d4da73c3be84a" title="Use DFT to insert Focal Plane Mask. ">fft_DFTinsertFPM()</a> </li>
+</ul>
 
 </div>
 </div>
@@ -283,7 +292,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_329feb2adc0787cbcf47a87f6fc2e340.html">OptSystProp</a></li><li class="navelem"><a class="el" href="OptSystProp_8h.html">OptSystProp.h</a></li>
-    <li class="footer">Generated on Thu Nov 23 2017 23:49:39 for coffee by
+    <li class="footer">Generated on Sun Nov 26 2017 12:33:55 for coffee by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
