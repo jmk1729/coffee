@@ -207,10 +207,12 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_DesignSteps_Mono.htm
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;SCORINGMASKTYPE = 0</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;[0] Total light in scoring field = 8.18737e+06, peak PSF = -1, SCOTINGTOTAL = 2436   -&gt; Average contrast = 2.57118e-07</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;saving contrast value [2.57118e-07] -&gt; piaacmcconf_i000/contrast_ptsrc_sm0_s0_l0565_sr10_nbr001_mr000_minsag-10000_maxsag010000_fpmreg001000_ssr00_ssm0_Mirror_wb01.txt</div>
-</div><!-- fragment --><p>Runtime 00:00:07 </p><hr/>
+</div><!-- fragment --><p>Runtime 00:00:07 (size 1024)</p>
+<p>Runtime 00:00:&ndash; (size 2048) </p><hr/>
 <h2>STEP 002: Specify input pupil geometry</h2>
 <p>The pupil geometry is copied to file <code>piaacmcconf_i000/pupa0_1024.fits</code></p>
-<p>Runtime 00:00:00 (size 1024) </p><hr/>
+<p>Runtime 00:00:00 (size 1024)</p>
+<p>Runtime 00:00:&ndash; (size 2048) </p><hr/>
 <h2>STEP 003 (mode = 0): compute on-axis PSF for new pupil geometry</h2>
 <p>Same as step 1, but taking into account the pupil geometry. With spiders or gaps in the pupil, the contrast will not be as good.</p>
 <table class="doxtable">
@@ -239,7 +241,8 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_DesignSteps_Mono.htm
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;optsyst[0].flux[0]  = 103004</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;SCORINGMASKTYPE = 0</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;[0] Total light in scoring field = 3.77881e+09, peak PSF = -1, SCOTINGTOTAL = 2436   -&gt; Average contrast = 0.000146207</div>
-</div><!-- fragment --><p>Runtime 00:00:07 (size 1024) </p><hr/>
+</div><!-- fragment --><p>Runtime 00:00:07 (size 1024)</p>
+<p>Runtile 00:01:&ndash; (size 2048) </p><hr/>
 <h2>STEP 004 (mode = 5): Compute Lyot stops shapes and locations, 1st pass</h2>
 <p>For circular centrally obscured pupils, the default Lyot stops configuration consists of two stops: one that masks the outer part of the beam, and one that masks the central obstruction.</p>
 <p>Fine optimization of the stops locations is done with a separate command. The optional lsoptrange value is the range (unit: m) for the mask position search.</p>
@@ -255,7 +258,8 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_DesignSteps_Mono.htm
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;BEST SOLUTION: 11.292762460755 / 12.274741805168    0.000001356577 / 0.000021030879  -&gt; 0.703163640577  0.036896957877</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;BEST SOLUTION: 12.029246969065 / 12.274741805168    0.000001627893 / 0.000021030879  -&gt; 0.701096376349  0.036559137596</div>
 </div><!-- fragment --><p>The optimal Lyot stop(s) conjugation(s) is written in file <code>piaacmcconf_i000/piaacmcparams_step004.conf</code></p>
-<p>Runtime 00:53:49 (size 1024) </p><hr/>
+<p>Runtime 00:53:49 (size 1024)</p>
+<p>Runtime 04:24:&ndash; (size 2048) </p><hr/>
 <h2>STEP 005 (mode = 2): Optimize focal plane mask transmission, 1st pass</h2>
 <p>See source code in <a class="el" href="PIAACMCsimul_8h.html#a6c9ce07671f0ea5bf5e4865847efa07f">PIAACMCsimul_exec_optimize_fpmtransmission()</a></p>
 <p>Optimizes the focal plane mask transmission. Results are written in file <code>piaacmcconf_i000/result_fpmt.log</code></p>
@@ -307,7 +311,7 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_DesignSteps_Mono.htm
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;+0.37549299  1.67329e-07         5     0.000729     0.000243</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;+0.37573599  1.67367e-07         5     0.000729     0.000243</div>
 </div><!-- fragment --><p>Runtime 00:03:56 (size 1024)</p>
-<hr/>
+<p>Runtime 00:09 (size 2048) </p><hr/>
 <h2>STEP 006 (mode = 5): Compute Lyot stops shapes and locations, 2nd pass, 70% throughput</h2>
 <p>Source code:</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;BEST SOLUTION: 30.006465758591 / 50.010776264318    0.000000319995 / 0.000021330725  -&gt; 0.602147984170  0.001772430096</div>
@@ -319,6 +323,7 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_DesignSteps_Mono.htm
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;BEST SOLUTION: 45.009698637886 / 50.010776264318    0.000000383994 / 0.000021330725  -&gt; 0.601238947002  0.001692309270</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;BEST SOLUTION: 46.009914163172 / 50.010776264318    0.000000383994 / 0.000021330725  -&gt; 0.600243611414  0.001670430013</div>
 </div><!-- fragment --><p>Runtime 00:02:50 (size 1024)</p>
+<p>Runtime 00:19:&ndash; (size 2048)</p>
 <hr/>
 <h2>STEP 007 (mode = 40): Tune PIAA shapes and focal plane mask transm, 10 cosine modes, 5 Fourier modes</h2>
 <p>Progress can be tracked by watching file :</p>
@@ -342,7 +347,7 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_DesignSteps_Mono.htm
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;##  [     7 /    20 ]   1.000      0.661774   2.74541e-08   (reg =  6.14971e-09 [1]  1.99516e-14 [1]   contrast =          2.13043e-08)       [0] [31] bestval =  2.74509e-08</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;-&gt;     7             2.74509e-08 &lt;-          2.14234e-07 </div>
 </div><!-- fragment --><p>Runtime 01:11:45 (size 1024)</p>
-<hr/>
+<p>Runtime 02:20:&ndash; (size 2048) </p><hr/>
 <h2>STEP 008 (mode = 40): Tune PIAA shapes and focal plane mask transm, 20 cosine modes, 20 Fourier modes</h2>
 <p>Progress can be tracked by watching file :</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;tail -f linoptval.txt</div>
@@ -358,7 +363,7 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_DesignSteps_Mono.htm
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;##  [     3 /  1000 ]   1.000      0.006096   1.41796e-08   (reg =  7.60623e-09 [1]  1.99516e-14 [1]   contrast =          6.57337e-09)       [0] [81] bestval =   1.4179e-08</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;-&gt;     3              1.4179e-08 &lt;-          2.74509e-08 </div>
 </div><!-- fragment --><p>Runtime 00:34:35 (size 1024)</p>
-<hr/>
+<p>Runtime 04:38:&ndash; (size 2048) </p><hr/>
 <h2>STEP 009 (mode = 5): Compute Lyot stops shapes and locations, 2nd pass, 70% throughput</h2>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;BEST SOLUTION: 0.000000000000 / 22.411085518079    0.000000642797 / 0.000020663874  -&gt; 0.654580018549  0.003217549471</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;BEST SOLUTION: 4.482217103616 / 22.411085518079    0.000000642797 / 0.000020663874  -&gt; 0.654559468105  0.003212765094</div>
@@ -389,7 +394,8 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_DesignSteps_Mono.htm
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;BEST SOLUTION: 21.066420386994 / 22.411085518079    0.000000771357 / 0.000020663874  -&gt; 0.652015770540  0.002728302947</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;BEST SOLUTION: 21.514642097355 / 22.411085518079    0.000000771357 / 0.000020663874  -&gt; 0.651040104043  0.002682478046</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;BEST SOLUTION: 23.307528938802 / 22.411085518079    0.000000925628 / 0.000020663874  -&gt; 0.650876386774  0.002653676594</div>
-</div><!-- fragment --><p>Runtime 00:02:44 (size 1024) </p><hr/>
+</div><!-- fragment --><p>Runtime 00:02:44 (size 1024)</p>
+<p>Runtime 00:23:&ndash; (size 2048) </p><hr/>
 <h2>STEP 010 (mode = 1): Tune Lyot stops conjugations</h2>
 <p>To view result:</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;tail -f result_LMpos.log</div>
@@ -444,7 +450,8 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_DesignSteps_Mono.htm
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;SCORINGMASKTYPE = 0</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;[0] Total light in scoring field = 255588, peak PSF = -1, SCOTINGTOTAL = 2436   -&gt; Average contrast = 9.88908e-09</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;BEST SOLUTION :   -0.059896 7.75573e-09</div>
-</div><!-- fragment --><p>Runtime 00:00:54 (size 1024) </p><hr/>
+</div><!-- fragment --><p>Runtime 00:00:54 (size 1024)</p>
+<p>Runtime 00:08:&ndash; (size 2048) </p><hr/>
 <h2>STEP 011 (mode = 40): Tune PIAA shapes and focal plane mask transm, 20 cosine modes, 20 Fourier modes</h2>
 <p>To view result:</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;tail -f result_LMpos.log</div>
@@ -481,7 +488,7 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_DesignSteps_Mono.htm
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;SCORINGMASKTYPE = 0</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;[0] Total light in scoring field = 174677, peak PSF = -1, SCOTINGTOTAL = 2436   -&gt; Average contrast = 6.75851e-09</div>
 </div><!-- fragment --><p>Runtime 00:37:29 (size 1024)</p>
-<hr/>
+<p>Runtime 03:19:00 (size 2048) </p><hr/>
 <h2>STEP 012 (mode = 40): Tune PIAA shapes and focal plane mask transm, 40 cosine modes, 150 Fourier modes</h2>
 <p>To view result:</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;tail -f result_LMpos.log</div>
@@ -523,7 +530,7 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_DesignSteps_Mono.htm
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;SCORINGMASKTYPE = 0</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;[0] Total light in scoring field = 114004, peak PSF = -1, SCOTINGTOTAL = 2436   -&gt; Average contrast = 4.41097e-09</div>
 </div><!-- fragment --><p>Runtime 01:31:26 (size 1024)</p>
-<hr/>
+<p>Runtime &ndash; (size 2048) </p><hr/>
 <h2>STEP 013 (mode = 5): Compute Lyot stops shapes and locations, 3nd pass, 70% throughput</h2>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;BEST SOLUTION: 9.601575812043 / 15.002462206317    0.000001111027 / 0.000020668962  -&gt; 0.704840156107  0.005970769686</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;BEST SOLUTION: 9.901625056169 / 15.002462206317    0.000001111027 / 0.000020668962  -&gt; 0.704051224148  0.005889714915</div>
@@ -600,7 +607,7 @@ $(document).ready(function(){initNavTree('page_PIAACMCsimul_DesignSteps_Mono.htm
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Nov 27 2017 10:09:33 for coffee by
+    <li class="footer">Generated on Mon Nov 27 2017 18:31:46 for coffee by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
