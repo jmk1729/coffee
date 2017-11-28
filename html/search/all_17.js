@@ -18,5 +18,5 @@ var searchData=
   ['write_5ffloat_5ffile',['write_float_file',['../COREMOD__tools_8c.html#a7e836ddddc1ca8f7ae7f9428b2de6076',1,'write_float_file(const char *fname, float value):&#160;COREMOD_tools.c'],['../COREMOD__tools_8h.html#a7e836ddddc1ca8f7ae7f9428b2de6076',1,'write_float_file(const char *fname, float value):&#160;COREMOD_tools.c']]],
   ['write_5fflot_5ffile_5fcli',['write_flot_file_cli',['../COREMOD__tools_8c.html#a1b63992861852582ae8fac50f2c6e02b',1,'COREMOD_tools.c']]],
   ['write_5fint_5ffile',['write_int_file',['../COREMOD__tools_8c.html#a575291550841af37f63fcefbaf121adf',1,'write_int_file(const char *fname, int value):&#160;COREMOD_tools.c'],['../COREMOD__tools_8h.html#a575291550841af37f63fcefbaf121adf',1,'write_int_file(const char *fname, int value):&#160;COREMOD_tools.c']]],
-  ['write_5fok',['WRITE_OK',['../structPIAACMCsimul__var.html#a1ff783d1d73f15a0f2574812f1933399',1,'PIAACMCsimul_var']]]
+  ['write_5fok',['WRITE_OK',['../structPIAACMCsimul__varType.html#acf97f61ea5cf4e193f5b858aa37506bb',1,'PIAACMCsimul_varType']]]
 ];

@@ -9,6 +9,7 @@ var searchData=
   ['clicore_2eh',['CLIcore.h',['../CLIcore_8h.html',1,'']]],
   ['clicore_2emd',['CLIcore.md',['../CLIcore_8md.html',1,'']]],
   ['climain_2ec',['CLImain.c',['../CLImain_8c.html',1,'']]],
+  ['code_5fof_5fconduct_2emd',['CODE_OF_CONDUCT.md',['../CODE__OF__CONDUCT_8md.html',1,'']]],
   ['coding_5fstandards_2emd',['coding_standards.md',['../coding__standards_8md.html',1,'']]],
   ['coffee_5fmodules_2emd',['coffee_Modules.md',['../coffee__Modules_8md.html',1,'']]],
   ['compilation_2emd',['Compilation.md',['../Compilation_8md.html',1,'']]],

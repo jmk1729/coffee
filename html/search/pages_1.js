@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['code_20of_20conduct',['Code of Conduct',['../md_CODE_OF_CONDUCT.html',1,'']]],
   ['coffee_5fmodules',['coffee_Modules',['../md_doc_coffee_Modules.html',1,'']]],
   ['cli_20overview',['CLI Overview',['../page_CLI_Overview.html',1,'page_userinput']]],
   ['coding_20standards',['Coding Standards',['../page_coding_standards.html',1,'']]],

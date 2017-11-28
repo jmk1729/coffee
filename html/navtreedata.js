@@ -2,6 +2,7 @@ var NAVTREE =
 [
   [ "coffee", "index.html", [
     [ "Outline", "index.html", null ],
+    [ "Code of Conduct", "md_CODE_OF_CONDUCT.html", null ],
     [ "coffee_Modules", "md_doc_coffee_Modules.html", "md_doc_coffee_Modules" ],
     [ "milk modules", "page_milk_Modules.html", "page_milk_Modules" ],
     [ "News", "page_news.html", null ],
@@ -30,7 +31,7 @@ var NAVTREE =
       [ "Globals", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", "globals_func" ],
-        [ "Variables", "globals_vars.html", null ],
+        [ "Variables", "globals_vars.html", "globals_vars" ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Enumerator", "globals_eval.html", null ]
@@ -45,14 +46,14 @@ var NAVTREEINDEX =
 "COREMOD__arith_8c.html#a64398243ee9e448b4f22dc306c11641c",
 "COREMOD__arith_8h.html#ab2028d29dca515a1955424fb1744ec43",
 "COREMOD__memory_8h.html#a0a48a63c3f53185b466c5e6bbd092bec",
-"PIAACMCsimul_8c.html#a64f701e6b95a8718054535b3c56bec24",
-"calc__bison_8c.html#a773aa2e81b4feec63f60f490265169a5",
-"dir_b07b29f2a0f54c902d2948f61c128711.html",
-"image__basic_8c.html#acbc7f09f878af1cb3e7506c7b9dde631",
-"img__reduce_8c.html#a9842752e03b4de9b4593f1a3b34364ab",
-"page_module_OpticsMaterials.html",
-"structEXAOSIMCONF.html#ac4ec429f868d07c826557017d8e86380",
-"struct____attribute____.html#a1aabca3f48169935bbbd61596a255cfe"
+"PIAACMCsimul_8c.html#a630b070f5e9d187ea334902ef75682d5",
+"ZernikePolyn_8c.html#aaa9a17c8f3de4537ab065288009d8c8c",
+"coronagraphs_8h_source.html",
+"globals_vars.html",
+"image__gen_8c.html#a231ca3394f8816d24d65fb403d58d246",
+"linARfilterPred_8h.html#a757c5f80b839ea32731ba61082ffe185",
+"structDATA.html#a700e0a489eabf7785da7361c2135f159",
+"structOPTSYST.html#ab559d2b56f4502be6cc1ea69f5b55f7d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
