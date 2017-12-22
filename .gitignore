@@ -26,3 +26,5 @@ src/fft/config/*
 src/*/data/*
 src/*/.libs/*
 */local/
+dochtml/
+
