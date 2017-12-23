@@ -43,7 +43,7 @@ Report bugs and issues on [this page]( https://github.com/coffee-org/coffee/issu
 ## Contributing to project
 
 
-See [coding standards]( http://coffee-org.github.io/coffee/html/page_coding_standards.html ) 
+See [coding standards]( https://coffee-org.github.io/coffee/page_coding_standards.html ) 
 
 
 
@@ -51,7 +51,7 @@ See [coding standards]( http://coffee-org.github.io/coffee/html/page_coding_stan
 
 ## Documentation
 
-[Online documentation]( http://coffee-org.github.io/coffee/html/index.html ) 
+[Online documentation]( http://coffee-org.github.io/coffee/index.html ) 
 
 
 ## Libraries
