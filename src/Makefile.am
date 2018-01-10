@@ -54,6 +54,9 @@ SUBDIRS += WFpropagate
 coffee_LDADD += WFpropagate/libwfpropagate.la
 coffee_CPPFLAGS += -I@abs_top_srcdir@/src/WFpropagate
 
+SUBDIRS += linARfilterPred
+coffee_LDADD += linARfilterPred/liblinarfilterpred.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/linARfilterPred
 
 
 ## 
@@ -108,6 +111,9 @@ SUBDIRS += fft
 coffee_LDADD += fft/libfft.la
 coffee_CPPFLAGS += -I@abs_top_srcdir@/src/fft
 
+SUBDIRS += kdtree
+coffee_LDADD += kdtree/libkdtree.la
+coffee_CPPFLAGS += -I@abs_top_srcdir@/src/kdtree
 
 
 ## 

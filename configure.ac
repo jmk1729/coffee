@@ -390,6 +390,7 @@ src/img_reduce/Makefile \
 src/psf/Makefile \
 src/cudacomp/Makefile \
 src/kdtree/Makefile \
+src/linARfilterPred/Makefile \
 src/PIAACMCsimul/Makefile \
 src/coronagraphs/Makefile \
 src/AOsystSim/Makefile \

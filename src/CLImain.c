@@ -2,6 +2,15 @@
 #include <stdlib.h>
 #include <CommandLineInterface/CLIcore.h>
 
+
+#include <image_basic/image_basic.h>
+#include <image_format/image_format.h>
+#include <img_reduce/img_reduce.h>
+#include <psf/psf.h>
+#include <ZernikePolyn/ZernikePolyn.h>
+#include <linARfilterPred/linARfilterPred.h>
+
+
 #define STYLE_BOLD    "\033[1m"
 #define STYLE_NO_BOLD "\033[22m"
 
