@@ -14,6 +14,16 @@ int main(int argc, char *argv[])
 	printf("\n        Coronagraph Optimization For Fast Exoplanet Exploration (coffee)\n");
 	printf(STYLE_NO_BOLD);
 	
+	// initialize milk modules for which no function calls is included by default
+	libinit_image_basic();
+	libinit_image_format();
+	libinit_psf();
+	libinit_img_reduce();
+	libinit_linARfilterPred();
+	libinit_ZernikePolyn();
+	
+	
+	
 	runCLI(argc, argv, AppName);
 
 	return 0;
