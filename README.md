@@ -5,6 +5,11 @@ dev branch: [![Build Status dev](https://travis-ci.org/coffee-org/cacao.svg?bran
 
 master branch: [![Build Status](https://travis-ci.org/coffee-org/cacao.svg?branch=master)](https://travis-ci.org/coffee-org/coffee)
 
+---
+
+IMPORTANT NOTE: coffee uses git submodules. Use `git clone --recursive` (see Downloading and Installing section)
+
+---
 
 
 # Coronagraph Optimization For Fast Exoplanet Exploration (coffee)
@@ -20,16 +25,17 @@ Executable launches a command line interface (CLI). Type "help" in the CLI to ge
 coffee uses [milk](https://github.com/milk-org/milk)
 
 
-## Downloading and installing 
+---
+
+
+## Downloading and Installing 
 
 
 The coffee package follows the standard git clone steps and GNU build process :
 
-	git clone https://github.com/coffee-rga/coffee
+	git clone --recursive https://github.com/coffee-rga/coffee
 	cd coffee
-	git submodule init
-	git submodule update
-	autoreconf -i
+	autoreconf -vif
 	./configure
 	make
 	make install
@@ -38,6 +44,9 @@ Note: On OS X you need to use gcc-mp-5 for openMP:
 
 	./configure "CC=/opt/local/bin/gcc-mp-5" CPPFLAGS="-I/usr/include/malloc/ -I/opt/local/include/readline" LDFLAGS="-L/opt/local/lib/"
 (Replace "/opt/local/" is the location of your installed libraries. )
+
+
+---
 
 
 
@@ -52,7 +61,7 @@ Report bugs and issues on [this page]( https://github.com/coffee-org/coffee/issu
 See [coding standards]( https://coffee-org.github.io/coffee/page_coding_standards.html ) 
 
 
-
+---
 
 
 ## Documentation
