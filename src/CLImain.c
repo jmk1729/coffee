@@ -8,6 +8,7 @@
 #include <img_reduce/img_reduce.h>
 #include <psf/psf.h>
 #include <ZernikePolyn/ZernikePolyn.h>
+#include <linopt_imtools/linopt_imtools.h>
 #include <linARfilterPred/linARfilterPred.h>
 
 
@@ -28,6 +29,7 @@ int main(int argc, char *argv[])
 	libinit_image_format();
 	libinit_psf();
 	libinit_img_reduce();
+	libinit_linopt_imtools();
 	libinit_linARfilterPred();
 	libinit_ZernikePolyn();
 	

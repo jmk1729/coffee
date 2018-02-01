@@ -1,4 +1,10 @@
  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4bd280f0915f4174823fa89dc4758100)](https://www.codacy.com/app/oguyon/coffee?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=coffee-org/coffee&amp;utm_campaign=Badge_Grade)
+
+dev branch: [![Build Status dev](https://travis-ci.org/coffee-org/cacao.svg?branch=dev)](https://travis-ci.org/coffee-org/coffee)
+
+master branch: [![Build Status](https://travis-ci.org/coffee-org/cacao.svg?branch=master)](https://travis-ci.org/coffee-org/coffee)
+
 
 
 # Coronagraph Optimization For Fast Exoplanet Exploration (coffee)
