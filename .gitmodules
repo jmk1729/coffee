@@ -80,6 +80,3 @@
 	path = src/OpticsMaterials
 	url = https://github.com/AtmoTurbu/OpticsMaterials
 
-[submodule "kdtree"]
-	path = kdtree
-	url = https://github.com/milk-org/kdtree

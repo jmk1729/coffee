@@ -31,7 +31,7 @@ coffee uses [milk](https://github.com/milk-org/milk)
 
 The coffee package follows the standard git clone steps and GNU build process :
 
-	git clone --recursive https://github.com/coffee-rga/coffee
+	git clone --recursive https://github.com/coffee-org/coffee
 	cd coffee
 	autoreconf -vif
 	./configure
