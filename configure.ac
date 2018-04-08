@@ -136,6 +136,7 @@ AC_CHECK_LIB( [fftw3], [main],
                 ]
 )
 
+
 AC_CHECK_LIB([gomp], [omp_get_num_threads])
 
 
@@ -193,9 +194,6 @@ AC_CHECK_HEADERS( [fitsio.h],
 
 
 
-
-
-
 #=================================================
 # Setup default CUDA paths
 #CUDA_INSTALL_PATH="/usr/local/cuda"
@@ -247,8 +245,10 @@ if test  "$cudaval" = "yes"; then
     LDFLAGS="$LDFLAGS $CUDA_LDFLAGS -L/usr/local/cuda/lib64/"
     CFLAGS="$CFLAGS $CUDA_CFLAGS"
     LD_LIBRARY_PATH="$LD_LIBRARY_PATH -L/usr/local/cuda/lib64/"
+echo "  -----------------------------------------  CUDA_CFLAGS  : $CUDA_CFLAGS"
+echo "  -----------------------------------------  CUDA_LDFLAGS : $CUDA_LDFLAGS"
+echo "  -----------------------------------------  CUDA_LIBS    : $CUDA_LIBS"
 fi
-
 
 
  
@@ -278,7 +278,13 @@ if test  "$magmaval" = "yes"; then
     LDFLAGS="$LDFLAGS $MAGMA_LDFLAGS"
     CFLAGS="$CFLAGS $MAGMA_CFLAGS"
     LD_LIBRARY_PATH="$LD_LIBRARY_PATH -L$MAGMA_INSTALL_PATH/lib"
+
+echo "  -----------------------------------------  MAGMA_CFLAGS  : $MAGMA_CFLAGS"
+echo "  -----------------------------------------  MAGMA_LDFLAGS : $MAGMA_LDFLAGS"
+echo "  -----------------------------------------  MAGMA_LIBS    : $MAGMA_LIBS"
+
 fi
+
 
 
 #=================================================
@@ -299,13 +305,13 @@ if test "$qdwhpartialval" == "no"; then
 fi
 
 if test  "$qdwhpartialval" = "yes"; then
-#	PKG_CHECK_MODULES([QDWHpartial], [qdwhpartial])  
+	PKG_CHECK_MODULES([QDWHpartial], [qdwhpartial])  
 	AC_DEFINE([HAVE_QDWHpartial],[1],[Defined if QDWHpartial should be used])
 	eval "ARRAY${N}='-D_QDWHpartial'"
     N=`expr $N + 1`
     LIBS="-L$QDWHpartial_INSTALL_PATH $QDWHpartial_LIBS $LIBS"
-#    LDFLAGS="$LDFLAGS $QDWHpartial_LDFLAGS"
-#    CFLAGS="$CFLAGS $QDWHpartial_CFLAGS"
+    LDFLAGS="$LDFLAGS $QDWHpartial_LDFLAGS"
+    CFLAGS="$CFLAGS $QDWHpartial_CFLAGS"
     LD_LIBRARY_PATH="$LD_LIBRARY_PATH -L$QDWHpartial_INSTALL_PATH"
 fi
 
@@ -315,7 +321,7 @@ echo "==================================================="
 echo "  C Compiler: $CC"
 echo "      CFLAGS: $CFLAGS"
 echo "     LDFLAGS: $LDFLAGS"
-#echo "  MAGMA_LIBS: $MAGMA_LIBS"
+echo "  MAGMA_LIBS: $MAGMA_LIBS"
 echo "        LIBS: $LIBS"
 echo "==================================================="
 
