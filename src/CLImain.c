@@ -21,6 +21,7 @@ int main(int argc, char *argv[])
 {
 	char *AppName = "coffee";
 
+
 	printf(STYLE_BOLD);
 	printf("\n        Coronagraph Optimization For Fast Exoplanet Exploration (coffee)\n");
 	printf(STYLE_NO_BOLD);
