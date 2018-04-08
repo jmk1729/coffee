@@ -16,6 +16,9 @@ AC_CONFIG_SRCDIR([src/CLImain.c])
 AC_CONFIG_MACRO_DIR([m4])
 
 
+# find the c-complier, use gcc by default
+AC_PROG_CC([gcc])
+CFLAGS+=" -std=gnu11"
 
 
 # Init Automake
@@ -24,8 +27,6 @@ m4_ifdef([AM_PROG_AR], [AM_PROG_AR])
 # Init Libtool
 LT_INIT
 
-# find the c-complier, use gcc by default
-AC_PROG_CC([gcc])
 
 # check for openMP
 AC_OPENMP
