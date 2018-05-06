@@ -10,6 +10,8 @@
 #include <ZernikePolyn/ZernikePolyn.h>
 #include <linopt_imtools/linopt_imtools.h>
 #include <linARfilterPred/linARfilterPred.h>
+#include <cudacomp/cudacomp.h>
+#include <PIAACMCsimul/PIAACMCsimul.h>
 
 
 #define STYLE_BOLD    "\033[1m"
@@ -33,8 +35,9 @@ int main(int argc, char *argv[])
 	libinit_linopt_imtools();
 	libinit_linARfilterPred();
 	libinit_ZernikePolyn();
+	libinit_cudacomp();
 	
-	
+	libinit_PIAACMCsimul();
 	
 	runCLI(argc, argv, AppName);
 

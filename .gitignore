@@ -1,3 +1,5 @@
+_build
+_install
 .gitignore
 README.txt
 *~
