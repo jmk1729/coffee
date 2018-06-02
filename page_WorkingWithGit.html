@@ -123,19 +123,18 @@ git push
 </pre><p>When updating master, it's good practice to also issue a git tag </p><pre class="fragment">git tag -a v0.1.23 -m "Version 0.1.23"
 git push origin v0.1.23
 </pre><h2>Documentation</h2>
-<p>Documentation tree can be locally built on dev branch with doxygen from main directory and pushed by : </p><pre class="fragment">git checkout dev
-doxygen
-git add html
+<p>Documentation tree can be locally built on dev or master branch with doxygen from main directory: </p><pre class="fragment">doxygen
+</pre><p>Documentation is built in local subdirectory dochtml/html, which is linked to branch gh-pages. To upload new documentation: </p><pre class="fragment">cd dochtml/html
+git add .
 git commit -am 'updated doxygen documentation'
-git push
-</pre><p>Same should be done on branch master.</p>
-<p>When switching branches, you may get an error message "The following untracked working tree files would be overwritten by checkout" preventing branch switch. If the error only lists files in the html directory, you can safely use the -f option to force branch change. </p>
+git push -f
+</pre><p>Note that the -f option is required as doxygen will modify, remove and create numerous files. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jun 2 2018 11:48:42 for coffee by
+    <li class="footer">Generated on Sat Jun 2 2018 11:53:17 for coffee by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
