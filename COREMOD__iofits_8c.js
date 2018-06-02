@@ -1,0 +1,28 @@
+var COREMOD__iofits_8c =
+[
+    [ "__attribute__", "COREMOD__iofits_8c.html#afd02bb0f6a745c39d5e3417493995c71", null ],
+    [ "break_cube", "COREMOD__iofits_8c.html#a0e4378b0d29e717e9eedb6a636d9c9ce", null ],
+    [ "break_cube_cli", "COREMOD__iofits_8c.html#a2a03a65f69660604a8c1eee6a7814410", null ],
+    [ "check_FITSIO_status", "COREMOD__iofits_8c.html#a387f1e0afdb5fb057e167936ff6947bb", null ],
+    [ "data_type_code", "COREMOD__iofits_8c.html#adcce790fec4b63a6bf470b5e9e0dd6c9", null ],
+    [ "file_exists", "COREMOD__iofits_8c.html#a8cc0efbf0483da8ea546063e372111be", null ],
+    [ "images_to_cube", "COREMOD__iofits_8c.html#acb3c87d25bcbc47f98e46ddd857f7df5", null ],
+    [ "images_to_cube_cli", "COREMOD__iofits_8c.html#a408b58c604506761f53c7b405815c152", null ],
+    [ "init_COREMOD_iofits", "COREMOD__iofits_8c.html#a696b781a8d79abb184b25bfdad25b57f", null ],
+    [ "is_fits_file", "COREMOD__iofits_8c.html#a2845aea27c203af865b377aaf3be08c9", null ],
+    [ "load_fits", "COREMOD__iofits_8c.html#a70cfbcffcdae55024d716beb00fb83fe", null ],
+    [ "load_fits_cli", "COREMOD__iofits_8c.html#a87cd03ee3b34c712212bdc2a06d32cd0", null ],
+    [ "read_keyword", "COREMOD__iofits_8c.html#ac1236f62e2e61f1f11b7758f47a35f1e", null ],
+    [ "read_keyword_alone", "COREMOD__iofits_8c.html#a66861f07ada74a2f1524a72f9bc4627a", null ],
+    [ "save_db_fits", "COREMOD__iofits_8c.html#afdabf860c8d5f676fd3be9e19767475e", null ],
+    [ "save_db_fits_cli", "COREMOD__iofits_8c.html#acbbbd31c69fdb2671db5e77fc4867caa", null ],
+    [ "save_fits", "COREMOD__iofits_8c.html#a52386c69ffda882b7ccd20c798a85848", null ],
+    [ "save_fits_atomic", "COREMOD__iofits_8c.html#a1f6ab7d4882b51bb6876378eaa5e7a60", null ],
+    [ "save_fits_cli", "COREMOD__iofits_8c.html#a6acf221191e97d047a8448e71482c419", null ],
+    [ "save_fl_fits", "COREMOD__iofits_8c.html#a9a66cdb1ef59db5145ecf018e70d959b", null ],
+    [ "save_fl_fits_cli", "COREMOD__iofits_8c.html#a24278fbc8eaa61b05eace8cf86d60411", null ],
+    [ "save_sh_fits", "COREMOD__iofits_8c.html#a387879e09beb682a8d662191eb8da216", null ],
+    [ "save_sh_fits_cli", "COREMOD__iofits_8c.html#a4ac8eca90f7c0e581a3f7ae34ad26e77", null ],
+    [ "save_ush_fits", "COREMOD__iofits_8c.html#a7bc7eac46c401fc66cae0610c1ff3e5b", null ],
+    [ "saveall_fits", "COREMOD__iofits_8c.html#a98189bce3f2f212bd2bbf89107e9cbe3", null ]
+];

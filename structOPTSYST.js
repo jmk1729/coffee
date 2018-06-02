@@ -1,0 +1,26 @@
+var structOPTSYST =
+[
+    [ "ASPHSURFMarray", "structOPTSYST.html#a92f2ea6132e093b6c852fdd1c829ebd3", null ],
+    [ "ASPHSURFRarray", "structOPTSYST.html#ad7660585b3ec010a228cfdc35ece1ca4", null ],
+    [ "beamrad", "structOPTSYST.html#a10d097a25c01cbe9263690707182f0c8", null ],
+    [ "DFTgridpad", "structOPTSYST.html#ad30b68bcbf477c2e7348e9452a8d1693", null ],
+    [ "elem_amp_ID_array", "structOPTSYST.html#a01d645e9d9739c79148aa0998424c188", null ],
+    [ "elem_pha_ID_array", "structOPTSYST.html#a82d5cc265a4f32788f756d8035e97346", null ],
+    [ "elemarrayindex", "structOPTSYST.html#af9b9474aff4a897ad23cf1aaa297ef42", null ],
+    [ "elemtype", "structOPTSYST.html#a29bcd30a4147808728c0d865e883940f", null ],
+    [ "elemZpos", "structOPTSYST.html#aa58b8090b627985b26d881da1ccc2efc", null ],
+    [ "endmode", "structOPTSYST.html#a98b8c66b45d6534f830d5cfe9fb39b17", null ],
+    [ "flux", "structOPTSYST.html#a4657868c34df790eb6c148a12aef3dd4", null ],
+    [ "FOCMASKarray", "structOPTSYST.html#a26a60095508ae4850277baccaf2ec5f4", null ],
+    [ "keepMem", "structOPTSYST.html#a5a24e6c6785830f113c6c32c7572d08e", null ],
+    [ "lambdaarray", "structOPTSYST.html#a9f5a2937870ef43b04a57760a513a978", null ],
+    [ "name", "structOPTSYST.html#a9004e8feaed3d42230bc476069d1e84d", null ],
+    [ "NB_asphsurfm", "structOPTSYST.html#a42bf1a88cf3bc234c3ff551f7094be9e", null ],
+    [ "NB_asphsurfr", "structOPTSYST.html#a1d1453dfab2f1a7d2cbd8c1a0f6b0174", null ],
+    [ "NB_focmask", "structOPTSYST.html#a70fa5cf6b8805eecaa3c31e982273c02", null ],
+    [ "NBelem", "structOPTSYST.html#ab9532e90f1fa8a506d6316eac6dfd5ce", null ],
+    [ "nblambda", "structOPTSYST.html#a984f1bc6e335c6ca935a7a4abc960351", null ],
+    [ "pixscale", "structOPTSYST.html#aa64373d953735e7fc898f664706ae434", null ],
+    [ "SAVE", "structOPTSYST.html#a1edeacc3267a9dae94f74a7ae2d5d668", null ],
+    [ "size", "structOPTSYST.html#a1ca7a42369dc6bf1567dbeb3028c8a2a", null ]
+];
