@@ -3,7 +3,7 @@
 #
 
 m4_define([PROGNAME], coffee)
-m4_define([PVERSION], 0.1.00)
+m4_define([PVERSION], 1.0.00)
 
 AC_INIT([PROGNAME], [PVERSION], [https://github.com/coffee-org/coffee/issues], [PROGNAME])
 
