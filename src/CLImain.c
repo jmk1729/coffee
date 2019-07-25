@@ -19,6 +19,7 @@
 // coffee includes for inits
 #include <PIAACMCsimul/PIAACMCsimul.h>
 #include <coronagraphs/coronagraphs.h>
+#include <AOsystSim/AOsystSim.h>
 
 #include <stdio.h>
 #include <sched.h>
@@ -68,7 +69,7 @@ int main(int argc, char *argv[])
 	// initialize coffee modules
 	libinit_coronagraphs();
 	libinit_PIAACMCsimul();
-
+	libinit_AOsystSim();
 
 
 
