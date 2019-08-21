@@ -140,7 +140,7 @@ add_executable(coffee
 src/CLImain.c)
 
 target_include_directories(coffee PUBLIC
-${PROJECT_SOURCE_DIR}/src
+${PROJECT_SOURCE_DIR}
 ${GSL_INCLUDE_DIRS}
 ${FFTW_INCLUDE_DIRS}
 ${FFTWF_INCLUDE_DIRS}
@@ -154,7 +154,7 @@ ${FFTWF_CFLAGS_OTHER}
 -fopenmp
 )
 
-set(BUILD_FLAGS "-DPACKAGE_NAME=\\\"coffee\\\" -DPACKAGE_VERSION=\\\"1.0.00\\\" -DCONFIGDIR=\\\"${PROJECT_SOURCE_DIR}/config\\\" -DSOURCEDIR=\\\"${PROJECT_SOURCE_DIR}/src\\\" -DABSSRCTOPDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DPACKAGE_BUGREPORT=\\\"https://github.com/coffee-org/coffee/issues\\\"")
+set(BUILD_FLAGS "-DPACKAGE_NAME=\\\"coffee\\\" -DPACKAGE_VERSION=\\\"1.0.00\\\" -DCONFIGDIR=\\\"${PROJECT_SOURCE_DIR}/config\\\" -DSOURCEDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DABSSRCTOPDIR=\\\"${PROJECT_SOURCE_DIR}\\\" -DPACKAGE_BUGREPORT=\\\"https://github.com/coffee-org/coffee/issues\\\"")
 
 
 target_link_libraries (coffee PUBLIC
