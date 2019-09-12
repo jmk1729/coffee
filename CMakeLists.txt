@@ -33,6 +33,7 @@ find_package(OpenMP)
 if (OPENMP_FOUND)
 message("Found OpenMP")
 add_compile_options(-fopenmp)
+add_definitions(-DHAVE_LIBGOMP)
 endif()
 
 message("COMPILE_OPTIONS:  ${COMPILE_OPTIONS}")
